@@ -1,0 +1,31 @@
+/* ---------- root variables ---------- */
+:root {
+  --main-text-color: #444;
+  --secondary-text-color: #00587a;
+}
+
+/* ---------- page styling ---------- */
+
+
+
+/* ---------- general styling ---------- */
+
+
+.page {
+  display: none;
+  
+  min-height: calc(100vh - 110px);
+  animation: fadeIn 0.4s;
+
+  padding: 55px 0;
+}
+
+
+
+/*--------- nav ----------*/
+
+
+/*--------- main -----------*/
+
+
+/*-------- menu --------*/
