@@ -4,7 +4,7 @@
  */
 const routes = {
   "#/": "home",
-  "#/menu": "menu",
+  "#/cafe-menu": "cafe-menu",
 };
 
 /**

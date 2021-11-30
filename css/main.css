@@ -1,11 +1,51 @@
 /* ---------- root variables ---------- */
 :root {
-  --main-text-color: #444;
-  --secondary-text-color: #00587a;
+  --text-color: #0e0e0e;
+  --main-green: #395442;
+  --main-yellow: #fcca3b;
+  --main-pink: #e50069;
+  --main-blue: #90c0ea;
+  --green: #708f39;
+  --yellow: #fef481;
+  --pink: #fdd4cc;
+  --blue: #b8d7f1;
+  --gree-light: #b6c69b;
+  --yellow-light: #fdf7b2;
+  --pink-light: #fdeae5;
+  --blue-light: #c5def3; 
+  --background: #fff9f0;
 }
 
 /* ---------- page styling ---------- */
+ html,
+ body {
+  max-width: 100%;
+  margin: 0 auto;
+ }
 
+ h1 {
+  font-family: kansasnew, serif;
+  font-weight: 700;
+  font-style: normal;  
+  font-size: 20pt;
+  color: var(--text-color);
+ }
+
+ h2 {
+  font-family: kansasnew, serif;
+  font-weight: 500; 
+  font-style: normal; 
+  font-size: 18pt;
+  color: var(--text-color);
+ }
+
+ p {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12pt;
+  color: var(--text-color);
+ }
 
 
 /* ---------- general styling ---------- */
@@ -23,7 +63,17 @@
 
 
 /*--------- nav ----------*/
+/*
+.tabbar {
+ 
+}
 
+
+
+.nav-link {
+
+}
+*/
 
 /*--------- main -----------*/
 
