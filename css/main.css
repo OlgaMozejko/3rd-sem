@@ -17,11 +17,13 @@
 }
 
 /* ---------- page styling ---------- */
- html,
+ html {
+
+ }
+
  body {
   max-width: 100%;
   margin: 0 auto;
-  overflow: hidden;
  }
 
  h1 {
@@ -55,10 +57,9 @@
 .page {
   display: none;
   
-  min-height: calc(100vh - 110px);
   animation: fadeIn 0.4s;
 
-  padding: 55px 0;
+  padding: 0;
 }
 
 
@@ -78,7 +79,24 @@
 
 /*--------- main -----------*/
 
+.cover {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  transition: all 1s ease;
+  overflow: hidden; 
+  background: var(--background);
+}
 
+.cover.cover-close {
+    height: 0; 
+  }
 
+.container {
+  height: 50rem;
+  position: relative;
+  z-index: 1;
+  background: white;
+}
 
 /*-------- menu --------*/
