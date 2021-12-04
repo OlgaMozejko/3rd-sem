@@ -9,26 +9,26 @@
   <meta name="author" content="" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="https://use.typekit.net/nvm8xrk.css">
-  
+
 </head>
 
 
-<body>
-  
+<body onhashchange="pageChange()">
 
-  <nav>
-    
+
+  <nav class="tabbar">
+    <a href="#home">Home</a>
   </nav>
 
 
 
 
- 
+
   <!-- home page -->
   <section id="home" class="page">
 
     <div class="cover">
-      
+
       <div class="sun">
         <img src="/img/sunnaked-01.png" alt="sun rays" class="sun-rays">
         <div class="face-box">
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-    
+
     </div>
 
     <div class="container">
@@ -49,7 +49,7 @@
       <h2>this is this</h2>
 
       <p>let the bodies hit the floor</p>
-    
+
 
     </div>
 
@@ -58,73 +58,32 @@
 
   <!-- menu page -->
 
-<section id="cafe-menu" class="page">
+  <section id="cafe-menu" class="page">
 
 
 
 
-</section>
+  </section>
 
 
 
 
 
 
-  
 
- 
+
+
 
 
 
   <!-- main js file -->
 
-  <script type="module">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
+  <!-- Firebase Firestore (database) JS SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js"></script>
 
-    // Import the functions you need from the SDKs you need
-  
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
-  
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
-  
-    // TODO: Add SDKs for Firebase products that you want to use
-  
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-  
-    // Your web app's Firebase configuration
-  
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  
-    const firebaseConfig = {
-  
-      apiKey: "AIzaSyA5Km7PRa3jrZRSTolSuaKxOeMcEUt9ius",
-  
-      authDomain: "den-gule-cafe.firebaseapp.com",
-  
-      projectId: "den-gule-cafe",
-  
-      storageBucket: "den-gule-cafe.appspot.com",
-  
-      messagingSenderId: "365916633510",
-  
-      appId: "1:365916633510:web:fbb4b9874d16463d563767",
-  
-      measurementId: "G-3P1NE0VQSM"
-  
-    };
-  
-  
-    // Initialize Firebase
-  
-    const app = initializeApp(firebaseConfig);
-  
-    const analytics = getAnalytics(app);
-  
-  </script>
-
-  <script src="js/router.js"></script>
-
-  <script src="js/main.js"></script>
+  <script src="js/main.js" type="module"></script>
 
 
 
