@@ -2,9 +2,11 @@
 
 import SpaService from "./spa-service.js";
 import MenuService from "./menu-service.js";
+import BookingService from "./menu-service.js";
 
 let _spaService = new SpaService("home");
 let _menuService = new MenuService();
+let _bookingService = new BookingService();
 let _selectedUserId = "";
 let _selectedImgFile = "";
 
