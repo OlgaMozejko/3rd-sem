@@ -20,7 +20,7 @@
 }
 
 /* ---------- page styling ---------- */
-html {}
+html,
 
 body {
   max-width: 100%;
@@ -70,17 +70,8 @@ p {
 
 
 /*--------- nav ----------*/
-/*
-.tabbar {
- 
-}
 
 
-
-.nav-link {
-
-}
-*/
 
 /*--------- main - scrolling -----------*/
 
