@@ -26,3 +26,5 @@ window.addEventListener("scroll", function () {
         cover.classList.remove("cover-close");
     }
 });
+
+
