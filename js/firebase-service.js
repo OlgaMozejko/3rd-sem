@@ -1,3 +1,8 @@
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore.js";
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyA5Km7PRa3jrZRSTolSuaKxOeMcEUt9ius",
 
@@ -13,6 +18,8 @@ const firebaseConfig = {
 
   measurementId: "G-3P1NE0VQSM"
 };
-firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+initializeApp(firebaseConfig);
 
-export const firebaseDB = firebase.firestore();
+// export reference to database
+export const firebaseDB = getFirestore();
