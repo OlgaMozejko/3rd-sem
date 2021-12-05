@@ -1,7 +1,7 @@
 /* ---------- root variables ---------- */
 :root {
   --text-color: #0e0e0e;
-  --main-green: #395442;
+  --main-green: #395443;
   --main-yellow: #fcca3b;
   --main-pink: #e50069;
   --main-blue: #90c0ea;
@@ -10,45 +10,50 @@
   --pink: #fdd4cc;
   --blue: #b8d7f1;
   --gree-light: #b6c69b;
-  --yellow-light: #fdf7b2;
+  --yellow-light: #FFF9F0;
   --pink-light: #fdeae5;
-  --blue-light: #c5def3; 
+  --blue-light: #c5def3;
   --background: #fff9f0;
+  --white: #FFFFFF;
+  --dark-orange: #C27060;
+  --placeholder: #000000;
 }
 
 /* ---------- page styling ---------- */
- html {
+html {}
 
- }
-
- body {
+body {
   max-width: 100%;
   margin: 0 auto;
- }
+}
 
- h1 {
+a {
+  text-decoration: none;
+}
+
+h1 {
   font-family: kansasnew, serif;
   font-weight: 700;
-  font-style: normal;  
+  font-style: normal;
   font-size: 48pt;
   color: var(--text-color);
- }
+}
 
- h2 {
+h2 {
   font-family: kansasnew, serif;
-  font-weight: 500; 
-  font-style: normal; 
+  font-weight: 500;
+  font-style: normal;
   font-size: 34pt;
   color: var(--text-color);
- }
+}
 
- p {
+p {
   font-family: montserrat, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18pt;
+  /* font-size: 18pt; */
   color: var(--text-color);
- }
+}
 
 
 /* ---------- general styling ---------- */
@@ -56,7 +61,7 @@
 
 .page {
   display: none;
-  
+
   animation: fadeIn 0.4s;
 
   padding: 0;
@@ -84,13 +89,13 @@
   display: flex;
   position: relative;
   transition: all 1s ease;
-  overflow: hidden; 
+  overflow: hidden;
   background: var(--background);
 }
 
 .cover.cover-close {
-    height: 0; 
-  }
+  height: 0;
+}
 
 .container {
   height: 50rem;
@@ -120,6 +125,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(-359deg);
   }
@@ -153,7 +159,7 @@
   0% {
     opacity: 0;
   }
-   
+
   70% {
     opacity: 0;
   }
@@ -173,10 +179,10 @@
 }
 
 @keyframes winking2 {
-  0% { 
+  0% {
     opacity: 1;
   }
-   
+
   70% {
     opacity: 1;
   }
@@ -192,8 +198,422 @@
   100% {
     opacity: 1;
   }
-  
+
 }
 
 
 /*-------- menu --------*/
+
+
+/*-------- booking - Marius --------*/
+
+.booking-popup {
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  height: 500px;
+  background-color: var(--white);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 13px;
+}
+
+.booking-container {
+  margin: 0 auto;
+  width: 68%;
+  text-align: center;
+}
+
+.close-icon {
+  position: absolute;
+  right: 19px;
+  top: 19px;
+  width: 10px;
+}
+
+.booking-title {
+  color: var(--main-green);
+  font-size: 22px;
+  line-height: 0;
+  padding: 0;
+  padding-top: 24px;
+}
+
+.booking-subtitle {
+  color: var(--main-green);
+  font-size: 8px;
+  margin-top: -8px;
+}
+
+.booking-required {
+  color: var(--dark-orange);
+  font-size: 6px;
+  line-height: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.booking-field {
+  border-radius: 5.5px;
+  font-size: 8px;
+  color: var(--text-color);
+  width: 92%;
+  height: 22px;
+  padding: 0 4%;
+  border: 0.4px solid var(--main-green);
+}
+
+.booking-buttons {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.calendar-month {
+  font-size: 8px;
+}
+
+.booking-button {
+  width: 30%;
+  height: 22px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 5.5px;
+  border: 0.4px solid var(--main-green);
+  font-size: 8px;
+  color: var(--main-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-svg {
+  margin-right: 0px;
+  fill: var(--main-green);
+}
+
+.booking-button-active {
+  color: var(--white);
+  fill: var(--white);
+  background-color: var(--main-green);
+}
+
+.booking-field-info {
+  border-radius: 5.5px;
+  font-size: 8px;
+  font-family: montserrat, sans-serif;
+  color: var(--text-color);
+  font-size: 8px;
+  width: 92%;
+  height: 42px;
+  padding: 4px 4%;
+  border: 0.4px solid var(--main-green);
+  margin-top: 14px;
+}
+
+.booking-additional {
+  color: var(--main-green);
+  font-size: 8px;
+  text-align: left;
+}
+
+.booking-date {
+  vertical-align: middle;
+  display: table-cell;
+  position: relative;
+  width: 92%;
+  height: 150px;
+  background-color: var(--yellow-light);
+  padding: 0 4%;
+  border-radius: 5.5px;
+  margin-top: 14px;
+}
+
+.calendar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.days {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2.5px;
+  column-gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  border-radius: 5.5px;
+  font-size: 7px;
+  width: 18px;
+  height: 18px;
+  border: 0.4px solid var(--main-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-day {
+  color: var(--white);
+  background-color: var(--main-green);
+}
+
+.day {
+  font-size: 7px;
+  border: 0.4px solid transparent;
+  width: 18px;
+  height: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  border-radius: 9px;
+  font-size: 12px;
+  width: 28px;
+  height: 18px;
+  border: 0.4px solid var(--main-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timebox {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2.5px;
+  column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-guests {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.guests-number {
+  width: 30%;
+  height: 18px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 5.5px;
+  border: 0.4px solid var(--main-green);
+  font-size: 8px;
+  color: var(--main-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.increment-buttons {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--yellow-light);
+  border-radius: 5.5px;
+  border: 0.4px solid var(--main-green);
+  margin-left: 5px;
+}
+
+.minus-button {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  background-color: var(--yellow-light);
+  border-radius: 5.5px;
+  border: 0;
+  font-size: 12px;
+  color: var(--main-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus-button {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border: 0;
+  background-color: var(--yellow-light);
+  border-radius: 5.5px;
+  font-size: 12px;
+  color: var(--main-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-arrow {
+  transform: rotate(180deg);
+  margin-left: -30%;
+}
+
+.request-button {
+  width: 82px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1280px) {
+  /*-------- booking - Marius --------*/
+
+  .booking-popup {
+    width: 33vw;
+    height: 60vw;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 1.5vw;
+  }
+
+  .booking-container {
+    width: 68%;
+  }
+
+  .close-icon {
+    right: 1.5vw;
+    top: 1.5vw;
+  }
+
+  .booking-title {
+    font-size: 2.5vw;
+    padding-top: 4vw;
+  }
+
+  .booking-subtitle {
+    font-size: 0.9vw;
+    margin-top: -0.9vw;
+  }
+
+  .booking-required {
+    font-size: 0.6vw;
+  }
+
+  .booking-field {
+    border-radius: 0.6vw;
+    font-size: 0.9vw;
+    width: 92%;
+    height: 2.4vw;
+    padding: 0 4%;
+    border: 0.03vw solid var(--main-green);
+  }
+
+  .booking-buttons {
+    margin-top: 1.8vw;
+    margin-bottom: 1.6vw;
+  }
+
+  .booking-button {
+    width: 30%;
+    height: 2.4vw;
+    border-radius: 0.6vw;
+    border: 0.03vw solid var(--main-green);
+    font-size: 0.9vw;
+  }
+
+  .booking-svg {
+    margin-right: 0px;
+  }
+
+  .booking-field-info {
+    border-radius: 0.6vw;
+    border: 0.03vw solid var(--main-green);
+    font-size: 0.9vw;
+    width: 92%;
+    height: 7.5vw;
+    padding: 0.3vw 4%;
+    margin-top: 1.6vw;
+  }
+
+  .booking-additional {
+    font-size: 0.9vw;
+  }
+
+  .booking-date {
+    width: 92%;
+    height: 19.8vw;
+    padding: 0 4%;
+    border-radius: 0.6vw;
+    margin-top: 1.6vw;
+  }
+
+  .days {
+    row-gap: 0.3vw;
+    column-gap: 0.6vw;
+  }
+
+  .number {
+    border-radius: 0.6vw;
+    font-size: 0.8vw;
+    width: 2.2vw;
+    height: 2.2vw;
+    border: 0.03vw solid var(--main-green);
+  }
+
+  .day {
+    font-size: 0.8vw;
+    border: 0.03vw solid transparent;
+    width: 2.2vw;
+    height: 1vw;
+  }
+
+  .time {
+    border-radius: 6vw;
+    font-size: 8vw;
+    width: 3.7vw;
+    height: 2.2vw;
+    border: 0.03vw solid var(--main-green);
+  }
+
+  .timebox {
+    row-gap: 0.3vw;
+    column-gap: 0.6vw;
+  }
+
+  .guests-number {
+    width: 30%;
+    height: 2.2vw;
+    border-radius: 0.6vw;
+    border: 0.03vw solid var(--main-green);
+    font-size: 0.9vw;
+  }
+
+  .increment-buttons {
+    border-radius: 0.6vw;
+    border: 0.03vw solid var(--main-green);
+    margin-left: 0.6vw;
+  }
+
+  .minus-button {
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 0.6vw;
+    border: 0;
+    font-size: 1.3vw;
+  }
+
+  .plus-button {
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 0.6vw;
+    font-size: 1.3vw;
+  }
+
+  .calendar-month {
+    font-size: 0.9vw;
+  }
+
+  .request-button {
+    width: 9.58vw;
+  }
+
+}
