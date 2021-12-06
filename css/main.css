@@ -20,8 +20,7 @@
 }
 
 /* ---------- page styling ---------- */
-html {
-}
+html {}
 
 body {
   max-width: 100%;
@@ -567,6 +566,7 @@ p {
 }
 
 #colddrink-list,
+#warmdrink-list,
 #beer-list,
 #cocktails-list {
   display: none;

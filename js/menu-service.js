@@ -1,4 +1,6 @@
-import { firebaseDB } from "./firebase-service.js";
+import {
+  firebaseDB
+} from "./firebase-service.js";
 
 import {
   collection,
@@ -151,7 +153,7 @@ export default class MenuService {
       `;
     }
     console.log("yes");
-    document.querySelector("#menu-list").innerHTML = htmlTemplate;
+    document.querySelector("#warmdrink-list").innerHTML = htmlTemplate;
   }
 
   // append users to the DOM
@@ -212,13 +214,16 @@ export default class MenuService {
     document.querySelector(".colddrink-heading").style.display = "none";
     document.querySelector(".beer-heading").style.display = "none";
     document.querySelector("#colddrink-list").style.display = "none";
+    document.querySelector("#warmdrink-list").style.display = "none";
     document.querySelector(".cocktails-heading").style.display = "none";
     document.querySelector("#cocktails-list").style.display = "none";
   }
 
   seeDrinks() {
+    document.querySelector("#menu-list").style.display = "none";
     document.querySelector("#beer-list").style.display = "grid";
     document.querySelector(".warmdrink-heading").style.display = "block";
+    document.querySelector("#warmdrink-list").style.display = "grid";
     document.querySelector(".colddrink-heading").style.display = "block";
     document.querySelector(".beer-heading").style.display = "block";
     document.querySelector("#colddrink-list").style.display = "grid";
