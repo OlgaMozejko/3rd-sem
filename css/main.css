@@ -396,7 +396,7 @@ p {
 
 .booking-guests {
   margin: 0 auto;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
 }
@@ -459,6 +459,18 @@ p {
 
 .request-button {
   width: 82px;
+}
+
+.days-show {
+  display: block;
+}
+
+.time-show {
+  display: none;
+}
+
+.guests-show {
+  display: none;
 }
 
 

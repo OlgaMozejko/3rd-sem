@@ -9,6 +9,9 @@ export default class BookingService {
     const buttons = document.querySelectorAll(
       ".booking-buttons .booking-button"
     );
+    const daysbox = document.querySelector(".days-show");
+    const timebox = document.querySelector(".time-show");
+    const guestsbox = document.querySelector(".booking-guests");
     const svgs = document.querySelectorAll(
       ".booking-svg .booking-button-active"
     );
@@ -18,8 +21,31 @@ export default class BookingService {
       } else {
         button.classList.remove("booking-button-active");
       }
+
     }
+    for (const button of buttons) {
+      if (value === button.getAttribute("id") || value == "time") {
+        timebox.style.display = "flex";
+        daysbox.style.display = "none";
+        guestsbox.style.display = "none";
+      }
+      if (value === button.getAttribute("id") || value == "date") {
+        timebox.style.display = "none";
+        daysbox.style.display = "block";
+        guestsbox.style.display = "none";
+        console.log(value)
+      }
+      if (value === button.getAttribute("id") || value == "guests") {
+        timebox.style.display = "none";
+        daysbox.style.display = "none";
+        guestsbox.style.display = "flex";
+        console.log(value)
+      }
+
+    }
+
   }
+
 
   booking() {
     document.querySelector("#cafe-menu").innerHTML += /*html*/ `
@@ -58,7 +84,7 @@ export default class BookingService {
             </button>
           </div>
 
-          <div class="booking-date">
+          <div class="booking-date days-show">
             <div class="calendar-header">
               <p class="calendar-month">December 2021</p>
               <img src="img/icons/left.svg">
@@ -110,7 +136,7 @@ export default class BookingService {
             </div>
           </div>
 
-          <!-- <div class="booking-date">
+          <div class="booking-date time-show" >
             <div class="timebox-flex">
               <div class="timebox">
                 <div class="time">10:00</div>
@@ -130,15 +156,15 @@ export default class BookingService {
                 <div class="time">17:00</div>
               </div>
             </div>
-          </div> -->
+          </div>
 
-          <!-- <div class="booking-guests">
+          <div class="booking-guests">
             <div class="guests-number">2 people</div>
             <div class="increment-buttons">
               <a href="" class="minus-button">-</a>
               <a href="" class="plus-button">+</a>
             </div>
-          </div> -->
+          </div>
 
           <textarea class="booking-field-info" name="other" placeholder="Other information"></textarea>
           <p class="booking-additional">*We are going to get back to you with a confirmation call.</p>
