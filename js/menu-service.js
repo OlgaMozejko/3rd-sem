@@ -22,7 +22,6 @@ export default class MenuService {
     this.readCocktails();
     this.menuFilter();
     this.seeFood();
-    this.seeDrinks();
   }
 
   /* ---- menu display - Vlada ----- */
@@ -215,6 +214,7 @@ export default class MenuService {
   }
 
   seeFood() {
+    document.querySelector("#menu-list").style.display = "grid";
     document.querySelector("#beer-list").style.display = "none";
     document.querySelector(".warmdrink-heading").style.display = "none";
     document.querySelector(".colddrink-heading").style.display = "none";
