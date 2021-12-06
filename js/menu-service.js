@@ -1,4 +1,6 @@
-import { firebaseDB } from "./firebase-service.js";
+import {
+  firebaseDB
+} from "./firebase-service.js";
 
 import {
   collection,
@@ -8,11 +10,12 @@ import {
 
 export default class MenuService {
   constructor() {
-    this.menusRef = collection(firebaseDB, "menu");
+    this.menusRef = collection(firebaseDB, "menu/drinks/beer");
     this.read();
   }
 
   read() {
+    // var listRef = this.menusRef.child('menus/drinks/beer');
     // ========== READ ==========
     // watch the database ref for changes
     onSnapshot(this.menusRef, (snapshot) => {
@@ -24,21 +27,46 @@ export default class MenuService {
       });
 
       console.log(this.menus);
+      this.append();
       this.appendFoods(this.menus);
     });
   }
 
   // append users to the DOM
-  appendFoods(items) {
+  appendFoods(menus) {
     let htmlTemplate = "";
-    for (let item of items) {
+    for (let item of menus) {
       htmlTemplate += `
       <article>
-        <h2>${item.food.foods.id}</h2>
+        <h2>${item.name}</h2>
       </article>
       `;
+      console.log(item);
+      document.querySelector("#menu-list").innerHTML = htmlTemplate;
     }
-    console.log("yes");
-    document.querySelector("#menu-list").innerHTML = htmlTemplate;
+
+
   }
+
+
+
+  append() {
+    for (let i in this.menu) {
+      for (let y in this.menu[i].drink) {
+        for (let z in this.menu[i].drink[y].beer) {
+          tmlTemplate += `
+      <article>
+        <h2>${z.name}</h2>
+      </article>
+      `;
+        }
+        console.log("yes");
+        document.querySelector("#menu-list").innerHTML = htmlTemplate;
+
+      }
+    }
+  }
+
+
+  //console.log(results);
 }
