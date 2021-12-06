@@ -20,7 +20,7 @@
 }
 
 /* ---------- page styling ---------- */
-html,
+html {}
 
 body {
   max-width: 100%;
@@ -70,8 +70,17 @@ p {
 
 
 /*--------- nav ----------*/
+/*
+.tabbar {
+ 
+}
 
 
+
+.nav-link {
+
+}
+*/
 
 /*--------- main - scrolling -----------*/
 
@@ -204,7 +213,7 @@ p {
   width: 280px;
   height: 500px;
   background-color: var(--white);
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 13px;
 }
 
@@ -462,7 +471,6 @@ p {
   .booking-popup {
     width: 33vw;
     height: 60vw;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     border-radius: 1.5vw;
   }
 
