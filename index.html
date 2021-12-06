@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Den Gule Cafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/nvm8xrk.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Den Gule Cafe</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="https://use.typekit.net/nvm8xrk.css" />
-</head>
+  <body onhashchange="pageChange()">
+    <nav></nav>
 
-<body onhashchange="pageChange()">
-  <nav></nav>
-
-  <!-- home page -->
-  <section id="home" class="page">
-    <div class="cover">
-      <div class="sun">
-        <img src="img/sunnaked-01.png" alt="sun rays" class="sun-rays" />
-        <div class="face-box">
-          <img src="img/facefixed-01.png" alt="sun face" class="sun-face-all" />
-          <div class="wink-box">
-            <img src="img/winkclosed-01.png" alt="" class="sun-face-wink" />
-            <img src="img/winkopen-01.png" alt="" class="sun-face" />
+    <!-- home page -->
+    <section id="home" class="page">
+      <div class="cover">
+        <div class="sun">
+          <img src="img/sunnaked-01.png" alt="sun rays" class="sun-rays" />
+          <div class="face-box">
+            <img
+              src="img/facefixed-01.png"
+              alt="sun face"
+              class="sun-face-all"
+            />
+            <div class="wink-box">
+              <img src="img/winkclosed-01.png" alt="" class="sun-face-wink" />
+              <img src="img/winkopen-01.png" alt="" class="sun-face" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- menu page -->
+    <!-- menu page -->
 
-  <section id="cafe-menu">
-    <div id="menu-list" class="menu-list"></div>
+    <section id="cafe-menu">
+      <h1 class="menu-head">
+        Den Gule Café <span class="menu-next">Menu</span>
+      </h1>
+      <div id="button-container"></div>
+      <!-- <button onclick="appendFoods(this.foods)">
+        <img src="img/icons/guests.svg" />
+      </button> -->
+      <h2 class="warmdrink-heading">Warm Drinks</h2>
+      <div id="menu-list" class="menu-list"></div>
+      <h2 class="colddrink-heading">Cold Drinks</h2>
+      <div id="colddrink-list" class="menu-list"></div>
+      <h2 class="beer-heading">Beer</h2>
+      <div id="beer-list" class="menu-list"></div>
+      <h2 class="cocktails-heading">Wine & Cocktails</h2>
+      <div id="cocktails-list" class="menu-list"></div>
+    </section>
 
-    <h1>H1 PARAGRAPH</h1>
-    <h2>H2 PARAGRAPH</h2>
-    <h3>H3 PARAGRAPH</h3>
-    <p>Paragraph</p>
-  </section>
-
-  <!-- main js file -->
-  <script src="js/main.js" type="module"></script>
-</body>
-
+    <!-- main js file -->
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>

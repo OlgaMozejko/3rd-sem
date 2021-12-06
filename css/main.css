@@ -10,17 +10,18 @@
   --pink: #fdd4cc;
   --blue: #b8d7f1;
   --gree-light: #b6c69b;
-  --yellow-light: #FFF9F0;
+  --yellow-light: #fff9f0;
   --pink-light: #fdeae5;
   --blue-light: #c5def3;
   --background: #fff9f0;
-  --white: #FFFFFF;
-  --dark-orange: #C27060;
+  --white: #ffffff;
+  --dark-orange: #c27060;
   --placeholder: #000000;
 }
 
 /* ---------- page styling ---------- */
-html {}
+html {
+}
 
 body {
   max-width: 100%;
@@ -55,7 +56,6 @@ p {
   color: var(--text-color);
 }
 
-
 /* ---------- general styling ---------- */
 
 .text-center {
@@ -69,8 +69,6 @@ p {
 
   padding: 0;
 }
-
-
 
 /*--------- nav ----------*/
 /*
@@ -152,7 +150,6 @@ p {
   animation: winking 5s infinite;
 }
 
-
 .sun-face {
   position: absolute;
   animation: winking2 5s infinite;
@@ -178,7 +175,6 @@ p {
   100% {
     opacity: 0;
   }
-
 }
 
 @keyframes winking2 {
@@ -201,12 +197,9 @@ p {
   100% {
     opacity: 1;
   }
-
 }
 
-
 /*-------- menu --------*/
-
 
 /*-------- booking - Marius --------*/
 
@@ -272,7 +265,7 @@ p {
   width: 92%;
   height: 30px;
   padding: 0 4%;
-  border: .5px solid var(--main-green);
+  border: 0.5px solid var(--main-green);
 }
 
 .booking-buttons {
@@ -505,10 +498,79 @@ p {
   display: none;
 }
 
+/*-------- menu - Vlada --------*/
+.menu-list {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px 20px;
+  padding: 10px;
+  margin: 0 auto;
+}
 
+.menu-list article {
+  width: 300px;
+}
 
+.menu-img {
+  display: block;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
 
+.menu-text {
+  width: 290px;
+  height: inherit;
+  background-color: var(--yellow-light);
+  padding: 1vw 0.5vw;
+  border-radius: 20px;
+  margin-top: 10px;
+}
 
+.menu-heading {
+  padding: 0 5px;
+  margin: 0;
+  font-size: 1.2vw;
+  color: var(--text-color);
+  text-transform: none;
+}
+
+.menu-description {
+  margin-top: 5px;
+  font-size: 0.85vw;
+  color: var(--text-color);
+  text-transform: lowercase;
+  padding: 0 5px;
+}
+
+.menu-price {
+  color: var(--text-color);
+  font-size: 1vw;
+  text-align: right;
+  padding: 0 5px;
+}
+
+.drink-text {
+  background-color: var(--yellow-light);
+  padding: 0.5vw;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.warmdrink-heading,
+.colddrink-heading,
+.beer-heading,
+.cocktails-heading {
+  display: none;
+}
+
+#colddrink-list,
+#beer-list,
+#cocktails-list {
+  display: none;
+}
 
 @media only screen and (max-width: 1200px) {
   /*-------- booking - Marius --------*/
@@ -597,9 +659,6 @@ p {
     margin-top: 1.6vw;
   }
 
-
-
-
   .days {
     row-gap: 0.3vw;
     column-gap: 0.6vw;
@@ -621,8 +680,8 @@ p {
   }
 
   .time {
-    border-radius: .6vw;
-    font-size: .8vw;
+    border-radius: 0.6vw;
+    font-size: 0.8vw;
     width: 3.7vw;
     height: 2.2vw;
     border: 0.03vw solid var(--main-green);
@@ -669,7 +728,6 @@ p {
   .request-button {
     width: 9.58vw;
   }
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -757,9 +815,6 @@ p {
     border-radius: 6px;
     margin-top: 16px;
   }
-
-
-
 
   .days {
     row-gap: 3px;

@@ -1,6 +1,4 @@
-import {
-  firebaseDB
-} from "./firebase-service.js";
+import { firebaseDB } from "./firebase-service.js";
 
 import {
   collection,
@@ -10,63 +8,221 @@ import {
 
 export default class MenuService {
   constructor() {
-    this.menusRef = collection(firebaseDB, "menu/drinks/beer");
-    this.read();
+    this.beersRef = collection(firebaseDB, "menu/drinks/beer");
+    this.foodsRef = collection(firebaseDB, "menu/food/foods");
+    this.coldDrinksRef = collection(firebaseDB, "menu/drinks/cold-drinks");
+    this.warmDrinksRef = collection(firebaseDB, "menu/drinks/warm-drinks");
+    this.cocktailsRef = collection(firebaseDB, "menu/drinks/wine-cocktails");
+    this.readFoods();
+    this.readBeers();
+    this.readColdDrinks();
+    this.readWarmDrinks();
+    this.readCocktails();
+    this.menuFilter();
   }
 
-  read() {
-    // var listRef = this.menusRef.child('menus/drinks/beer');
+  readFoods() {
     // ========== READ ==========
     // watch the database ref for changes
-    onSnapshot(this.menusRef, (snapshot) => {
+    onSnapshot(this.foodsRef, (snapshot) => {
       // mapping snapshot data from firebase in to user objects
-      this.menus = snapshot.docs.map((doc) => {
-        const menu = doc.data();
-        menu.id = doc.id;
-        return menu;
+      this.foods = snapshot.docs.map((doc) => {
+        const foods = doc.data();
+        foods.id = doc.id;
+        return foods;
       });
 
-      console.log(this.menus);
-      this.append();
-      this.appendFoods(this.menus);
+      console.log(this.foods);
+      this.appendFoods(this.foods);
+    });
+  }
+
+  readBeers() {
+    // ========== READ ==========
+    // watch the database ref for changes
+    onSnapshot(this.beersRef, (snapshot) => {
+      // mapping snapshot data from firebase in to user objects
+      this.beers = snapshot.docs.map((doc) => {
+        const beers = doc.data();
+        beers.id = doc.id;
+        return beers;
+      });
+
+      console.log(this.beers);
+      this.appendBeers(this.beers);
+    });
+  }
+
+  readWarmDrinks() {
+    // ========== READ ==========
+    // watch the database ref for changes
+    onSnapshot(this.warmDrinksRef, (snapshot) => {
+      // mapping snapshot data from firebase in to user objects
+      this.warmDrinks = snapshot.docs.map((doc) => {
+        const warmDrinks = doc.data();
+        warmDrinks.id = doc.id;
+        return warmDrinks;
+      });
+
+      console.log(this.warmDrinks);
+      this.appendWarmDrinks(this.warmDrinks);
+    });
+  }
+
+  readColdDrinks() {
+    // ========== READ ==========
+    // watch the database ref for changes
+    onSnapshot(this.coldDrinksRef, (snapshot) => {
+      // mapping snapshot data from firebase in to user objects
+      this.coldDrinks = snapshot.docs.map((doc) => {
+        const coldDrinks = doc.data();
+        coldDrinks.id = doc.id;
+        return coldDrinks;
+      });
+
+      console.log(this.coldDrinks);
+      this.appendColdDrinks(this.coldDrinks);
+    });
+  }
+
+  readCocktails() {
+    // ========== READ ==========
+    // watch the database ref for changes
+    onSnapshot(this.cocktailsRef, (snapshot) => {
+      // mapping snapshot data from firebase in to user objects
+      this.cocktails = snapshot.docs.map((doc) => {
+        const cocktails = doc.data();
+        cocktails.id = doc.id;
+        return cocktails;
+      });
+
+      console.log(this.cocktails);
+      this.appendCocktails(this.cocktails);
     });
   }
 
   // append users to the DOM
-  appendFoods(menus) {
+  appendFoods(foods) {
     let htmlTemplate = "";
-    for (let item of menus) {
+    for (let item of foods) {
       htmlTemplate += `
       <article>
-        <h2>${item.name}</h2>
+      <img src="${item.photo || "../img/placeholder-img.png"}" class="menu-img">
+      <div class="menu-text">
+        <h2 class="menu-heading">${item.name}</h2>
+        <p class="menu-description">${item.description || ""}</p>
+        <p class="menu-price">${item.price}kr</p>
+        </div>
       </article>
       `;
-      console.log(item);
-      document.querySelector("#menu-list").innerHTML = htmlTemplate;
     }
-
-
+    console.log("yes");
+    document.querySelector("#menu-list").innerHTML = htmlTemplate;
   }
 
-
-
-  append() {
-    for (let i in this.menu) {
-      for (let y in this.menu[i].drink) {
-        for (let z in this.menu[i].drink[y].beer) {
-          tmlTemplate += `
+  // append users to the DOM
+  appendBeers(beers) {
+    let htmlTemplate = "";
+    for (let item of beers) {
+      htmlTemplate += `
       <article>
-        <h2>${z.name}</h2>
+      <div class="drink-text">
+        <h2 class="menu-heading">${item.name}</h2>
+        <p class="menu-price">${item.price}kr</p>
+        </div>
       </article>
       `;
-        }
-        console.log("yes");
-        document.querySelector("#menu-list").innerHTML = htmlTemplate;
-
-      }
     }
+    console.log("yes");
+    document.querySelector("#beer-list").innerHTML = htmlTemplate;
   }
 
+  // append users to the DOM
+  appendWarmDrinks(drinks) {
+    let htmlTemplate = "";
+    for (let item of drinks) {
+      htmlTemplate += `
+      <article>
+      <div class="menu-text">
+        <h2 class="menu-heading">${item.name}</h2>
+        <p class="menu-price">${item.price}kr</p>
+        </div>
+      </article>
+      `;
+    }
+    console.log("yes");
+    document.querySelector("#menu-list").innerHTML = htmlTemplate;
+  }
 
-  //console.log(results);
+  // append users to the DOM
+  appendColdDrinks(drinks) {
+    let htmlTemplate = "";
+    for (let item of drinks) {
+      htmlTemplate += `
+      <article>
+      <div class="drink-text">
+        <h2 class="menu-heading">${item.name}</h2>
+        <p class="menu-price">${item.price}kr</p>
+        </div>
+      </article>
+      `;
+    }
+    console.log("yes");
+    document.querySelector("#colddrink-list").innerHTML = htmlTemplate;
+  }
+
+  // append users to the DOM
+  appendCocktails(drinks) {
+    let htmlTemplate = "";
+    for (let item of drinks) {
+      htmlTemplate += `
+      <article>
+      <div class="drink-text">
+        <h2 class="menu-heading">${item.name}</h2>
+        <p class="menu-price">${item.price}kr</p>
+        </div>
+      </article>
+      `;
+    }
+    console.log("yes");
+    document.querySelector("#cocktails-list").innerHTML = htmlTemplate;
+  }
+
+  appendDrinks() {
+    this.readWarmDrinks(this.warmDrinks);
+    this.readBeers(this.beers);
+    this.readColdDrinks(this.coldDrinks);
+    this.readCocktails(this.cocktails);
+  }
+
+  menuFilter() {
+    document.querySelector("#button-container").innerHTML += /*html*/ `
+    <button id="foods-menu" class="button-filter" onclick="readFoods(this.foods); seeFood();">
+    <img src="../img/icons/food.svg">
+    </button>
+     <button class="button-filter" onclick="seeDrinks(); appendDrinks()">
+    <img src="../img/icons/drinks.svg">
+    </button> 
+    `;
+  }
+
+  seeFood() {
+    document.querySelector("#beer-list").style.display = "none";
+    document.querySelector(".warmdrink-heading").style.display = "none";
+    document.querySelector(".colddrink-heading").style.display = "none";
+    document.querySelector(".beer-heading").style.display = "none";
+    document.querySelector("#colddrink-list").style.display = "none";
+    document.querySelector(".cocktails-heading").style.display = "none";
+    document.querySelector("#cocktails-list").style.display = "none";
+  }
+
+  seeDrinks() {
+    document.querySelector("#beer-list").style.display = "grid";
+    document.querySelector(".warmdrink-heading").style.display = "block";
+    document.querySelector(".colddrink-heading").style.display = "block";
+    document.querySelector(".beer-heading").style.display = "block";
+    document.querySelector("#colddrink-list").style.display = "grid";
+    document.querySelector(".cocktails-heading").style.display = "block";
+    document.querySelector("#cocktails-list").style.display = "grid";
+  }
 }
