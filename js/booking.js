@@ -5,6 +5,21 @@ export default class BookingService {
 
   // Booking pop-up - Marius
 
+  _selectBooking(value) {
+    const buttons = document.querySelectorAll(
+      ".booking-buttons .booking-button"
+    );
+    const svgs = document.querySelectorAll(
+      ".booking-svg .booking-button-active"
+    );
+    for (const button of buttons) {
+      if (value === button.getAttribute("id")) {
+        button.classList.add("booking-button-active");
+      } else {
+        button.classList.remove("booking-button-active");
+      }
+    }
+  }
 
   booking() {
     document.querySelector("#cafe-menu").innerHTML += /*html*/ `
@@ -133,19 +148,6 @@ export default class BookingService {
 
       </div>
       `;
-  }
-
-  selectBooking(value) {
-    const buttons = document.querySelectorAll(
-      ".booking-buttons .booking-button"
-    );
-    for (const button of buttons) {
-      if (value === button.getAttribute("id")) {
-        button.classList.add("booking-button-active");
-      } else {
-        button.classList.remove("booking-button-active");
-      }
-    }
   }
 
 }

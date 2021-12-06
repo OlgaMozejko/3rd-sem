@@ -10,6 +10,10 @@ let _bookingService = new BookingService();
 let _selectedUserId = "";
 let _selectedImgFile = "";
 
+window.selectBooking = function (value) {
+    _bookingService._selectBooking(value);
+};
+
 window.pageChange = function () {
     _spaService.pageChange();
 }
@@ -26,8 +30,3 @@ window.addEventListener("scroll", function () {
         cover.classList.remove("cover-close");
     }
 });
-
-
-
-
-
