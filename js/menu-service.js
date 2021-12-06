@@ -21,8 +21,12 @@ export default class MenuService {
     this.readWarmDrinks();
     this.readCocktails();
     this.menuFilter();
+    this.seeFood();
+    this.seeDrinks();
   }
 
+  /* ---- menu display - Vlada ----- */
+  /*--- reading different kind of menu items -----*/
   readFoods() {
     // ========== READ ==========
     // watch the database ref for changes
@@ -103,7 +107,7 @@ export default class MenuService {
     });
   }
 
-  // append users to the DOM
+  // append food menu to the DOM
   appendFoods(foods) {
     let htmlTemplate = "";
     for (let item of foods) {
@@ -122,7 +126,7 @@ export default class MenuService {
     document.querySelector("#menu-list").innerHTML = htmlTemplate;
   }
 
-  // append users to the DOM
+  // append beer menu to the DOM
   appendBeers(beers) {
     let htmlTemplate = "";
     for (let item of beers) {
@@ -139,7 +143,7 @@ export default class MenuService {
     document.querySelector("#beer-list").innerHTML = htmlTemplate;
   }
 
-  // append users to the DOM
+  // append warm drink menu to the DOM
   appendWarmDrinks(drinks) {
     let htmlTemplate = "";
     for (let item of drinks) {
@@ -156,7 +160,7 @@ export default class MenuService {
     document.querySelector("#warmdrink-list").innerHTML = htmlTemplate;
   }
 
-  // append users to the DOM
+  // append cold drink menu to the DOM
   appendColdDrinks(drinks) {
     let htmlTemplate = "";
     for (let item of drinks) {
@@ -173,7 +177,7 @@ export default class MenuService {
     document.querySelector("#colddrink-list").innerHTML = htmlTemplate;
   }
 
-  // append users to the DOM
+  // append cocktail menu to the DOM
   appendCocktails(drinks) {
     let htmlTemplate = "";
     for (let item of drinks) {
@@ -190,6 +194,7 @@ export default class MenuService {
     document.querySelector("#cocktails-list").innerHTML = htmlTemplate;
   }
 
+  // function for appending all drink menus together
   appendDrinks() {
     this.readWarmDrinks(this.warmDrinks);
     this.readBeers(this.beers);
@@ -197,6 +202,7 @@ export default class MenuService {
     this.readCocktails(this.cocktails);
   }
 
+  // onclick function for menu filtering buttons
   menuFilter() {
     document.querySelector("#button-container").innerHTML += /*html*/ `
     <button id="foods-menu" class="button-filter" onclick="readFoods(this.foods); seeFood();">
