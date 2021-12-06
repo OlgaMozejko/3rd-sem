@@ -14,6 +14,15 @@ window.selectBooking = function (value) {
     _bookingService._selectBooking(value);
 };
 
+window.closeBooking = function (value) {
+    _bookingService._closeBooking(value);
+};
+
+window.nextBooking = function (value) {
+    _bookingService._nextBooking(value);
+};
+
+
 window.pageChange = function () {
     _spaService.pageChange();
 }

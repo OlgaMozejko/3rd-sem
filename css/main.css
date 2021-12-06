@@ -58,6 +58,9 @@ p {
 
 /* ---------- general styling ---------- */
 
+.text-center {
+  text-align: center !important;
+}
 
 .page {
   display: none;
@@ -208,6 +211,7 @@ p {
 /*-------- booking - Marius --------*/
 
 .booking-popup {
+  display: block;
   position: fixed;
   margin: 0 auto;
   width: 400px;
@@ -494,6 +498,10 @@ p {
 }
 
 .time-show {
+  display: none;
+}
+
+.success {
   display: none;
 }
 

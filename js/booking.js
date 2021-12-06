@@ -61,14 +61,14 @@ export default class BookingService {
   booking() {
     document.querySelector("#cafe-menu").innerHTML += /*html*/ `
       <div class="booking-popup">
-        <img src="img/icons/close-icon.svg" class="close-icon">
+        <img src="img/icons/close-icon.svg" class="close-icon" onclick="closeBooking();">
         <div class="booking-container">
           <p class="booking-title">Book a table</p>
           <p class="booking-subtitle">DEN GULE CAFÉ</p>
           <p class="booking-required">required*</p>
-          <input class="booking-field" placeholder="Name" name="Name">
+          <input class="booking-field" placeholder="Name" name="Name" required>
           <p class="booking-required">required*</p>
-          <input class="booking-field" placeholder="Phone number" name="Phone">
+          <input class="booking-field" placeholder="Phone number" name="Phone" required>
           <div class="booking-buttons">
             <button class="booking-button booking-button-active" name="Date" value="date" id="date" onclick="selectBooking(this.value);"><svg width="14" height="16"
                 viewBox="0 0 14 16" class="booking-svg datesvg" xmlns="http://www.w3.org/2000/svg">
@@ -98,13 +98,13 @@ export default class BookingService {
               <img src="img/icons/left.svg" class="right-arrow">
             </div>
             <div class="days">
-              <a href="" class="day">Mo</a>
-              <a href="" class="day">Tu</a>
-              <a href="" class="day">We</a>
-              <a href="" class="day">Th</a>
-              <a href="" class="day">Fr</a>
-              <a href="" class="day">Sa</a>
-              <a href="" class="day">Su</a>
+              <a class="day">Mo</a>
+              <a class="day">Tu</a>
+              <a  class="day">We</a>
+              <a  class="day">Th</a>
+              <a  class="day">Fr</a>
+              <a  class="day">Sa</a>
+              <a  class="day">Su</a>
               <a href="" class="number">29</a>
               <a href="" class="number">30</a>
               <a href="" class="number">1</a>
@@ -175,12 +175,39 @@ export default class BookingService {
 
           <textarea class="booking-field-info" name="other" placeholder="Other information"></textarea>
           <p class="booking-additional">*We are going to get back to you with a confirmation call.</p>
-          <img src="img/icons/requestNow.svg" class="request-button">
+          <img src="img/icons/requestNow.svg" class="request-button" onclick="nextBooking();">
         </div>
 
+      </div>
+
+      <div class="booking-popup success">
+        <img src="img/icons/close-icon.svg" class="close-icon" onclick="closeBooking();">
+        <div class="booking-container">
+          <p class="booking-title">Book a table</p>
+          <p class="booking-subtitle">DEN GULE CAFÉ</p>
+          <img src="img/icons/logo.svg" class="logo-booking">
+          <p class="booking-subtitle-second">Thank you for booking!</p>
+          <p class="booking-additional text-center" >You have pre-reserved a table for <b>4 people</b> on <b>December 23, 2021, at 18:00</b>. </p>
+          <p class="booking-additional text-center" >*We are going to get back to you with a confirmation call.</p>
+          <img src="img/icons/ok.svg" class="request-button" onclick="closeBooking();">
+        </div>
 
       </div>
       `;
+  }
+
+  _closeBooking() {
+    const bookingWindow = document.querySelector(".booking-popup");
+    const bookingSuccess = document.querySelector(".success");
+    bookingSuccess.style.display = "none";
+    bookingWindow.style.display = "none";
+  }
+
+  _nextBooking() {
+    const bookingWindow = document.querySelector(".booking-popup");
+    const bookingSuccess = document.querySelector(".success");
+    bookingSuccess.style.display = "block";
+    bookingWindow.style.display = "none";
   }
 
 }
