@@ -469,9 +469,6 @@ p {
   display: none;
 }
 
-.guests-show {
-  display: none;
-}
 
 
 
@@ -550,12 +547,23 @@ p {
   }
 
   .booking-date {
+    display: block;
     width: 92%;
     height: 19.8vw;
     padding: 0 4%;
     border-radius: 0.6vw;
     margin-top: 1.6vw;
   }
+
+  .booking-time {
+    display: none;
+    width: 92%;
+    height: 19.8vw;
+    padding: 0 4%;
+    border-radius: 0.6vw;
+    margin-top: 1.6vw;
+  }
+
 
   .days {
     row-gap: 0.3vw;

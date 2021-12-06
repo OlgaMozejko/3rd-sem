@@ -9,8 +9,8 @@ export default class BookingService {
     const buttons = document.querySelectorAll(
       ".booking-buttons .booking-button"
     );
-    const daysbox = document.querySelector(".days-show");
-    const timebox = document.querySelector(".time-show");
+    const daysbox = document.querySelector(".booking-date");
+    const timebox = document.querySelector(".booking-time");
     const guestsbox = document.querySelector(".booking-guests");
     const svgs = document.querySelectorAll(
       ".booking-svg .booking-button-active"
@@ -25,7 +25,7 @@ export default class BookingService {
     }
     for (const button of buttons) {
       if (value === button.getAttribute("id") || value == "time") {
-        timebox.style.display = "flex";
+        timebox.style.display = "none";
         daysbox.style.display = "none";
         guestsbox.style.display = "none";
       }
@@ -38,7 +38,7 @@ export default class BookingService {
       if (value === button.getAttribute("id") || value == "guests") {
         timebox.style.display = "none";
         daysbox.style.display = "none";
-        guestsbox.style.display = "flex";
+        guestsbox.style.display = "none";
         console.log(value)
       }
 
@@ -84,7 +84,7 @@ export default class BookingService {
             </button>
           </div>
 
-          <div class="booking-date days-show">
+          <div class="booking-date">
             <div class="calendar-header">
               <p class="calendar-month">December 2021</p>
               <img src="img/icons/left.svg">
@@ -136,7 +136,7 @@ export default class BookingService {
             </div>
           </div>
 
-          <div class="booking-date time-show" >
+          <div class="booking-time" >
             <div class="timebox-flex">
               <div class="timebox">
                 <div class="time">10:00</div>
