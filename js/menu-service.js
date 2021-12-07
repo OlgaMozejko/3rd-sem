@@ -37,6 +37,7 @@ export default class MenuService {
 
       console.log(this.foods);
       this.appendFoods(this.foods);
+      this.appendFavourites(this.foods);
     });
   }
 
@@ -197,6 +198,26 @@ export default class MenuService {
     this.readBeers(this.beers);
     this.readColdDrinks(this.coldDrinks);
     this.readCocktails(this.cocktails);
+  }
+
+  appendFavourites(foods) {
+    let htmlTemplate = "";
+    for (let item of foods) {
+      if (item.favourite == true) {
+        htmlTemplate += `
+     <article>
+      <img src="${item.photo || "../img/placeholder-img.png"}" class="menu-img">
+      <div class="menu-text">
+        <h2 class="menu-heading">${item.name}</h2>
+        <p class="menu-description">${item.description || ""}</p>
+        <p class="menu-price">${item.price}kr</p>
+        </div>
+      </article>
+      `;
+      }
+    }
+    console.log("yes");
+    document.querySelector("#menu-favourites").innerHTML = htmlTemplate;
   }
 
   // onclick function for menu filtering buttons

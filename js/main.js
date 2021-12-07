@@ -28,7 +28,6 @@ window.closeSpin = function () {
   _spinTheWheel._closeSpin();
 };
 
-
 window.pageChange = function () {
   _spaService.pageChange();
 };
@@ -53,7 +52,9 @@ window.seeDrinks = function () {
   _menuService.seeDrinks();
 };
 
-
+window.appendFavourites = function () {
+  _menuService.appendFavourites();
+};
 
 //nav
 
@@ -72,17 +73,19 @@ document.getElementById("navlink").addEventListener("click", function () {
 
 window.open = function () {
   document.getElementById("navi").style.width = "100%";
-  document.getElementById("line1").style.transform = "rotate(50deg) translate(0.5em)";
-  document.getElementById("line2").style.transform = "rotate(-50deg) translate(0.4em)";
-}
+  document.getElementById("line1").style.transform =
+    "rotate(50deg) translate(0.5em)";
+  document.getElementById("line2").style.transform =
+    "rotate(-50deg) translate(0.4em)";
+};
 
 window.close = function () {
   document.getElementById("navi").style.width = "0%";
-  document.getElementById("line1").style.transform = "rotate(0deg) translate(0em)";
-  document.getElementById("line2").style.transform = "rotate(0deg) translate(0em)";
-}
-
-
+  document.getElementById("line1").style.transform =
+    "rotate(0deg) translate(0em)";
+  document.getElementById("line2").style.transform =
+    "rotate(0deg) translate(0em)";
+};
 
 // scroll
 
