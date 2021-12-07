@@ -695,7 +695,7 @@ p {
   cursor: pointer;
   background-color: var(--pink-light);
   padding: 5px 40px;
-  width: 10%;
+  width: 7%;
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 220px;
@@ -704,17 +704,18 @@ p {
 .navigate-btn p {
   font-family: montserrat, serif;
   font-weight: 700;
+  font-size: 1vw;
   color: var(--dark-orange);
   text-align: center;
 }
 
 .navigate-btn-bord {
   position: absolute;
-  top: 169vh;
-  right: 43vw;
+  top: 168.7vh;
+  right: 44.5vw;
   margin: 0 auto;
   border: 0.2em solid var(--text-color);
-  width: 12em;
+  width: 10em;
   height: 3.6em;
   border-radius: 50%;
   transform: rotate(-8deg);
@@ -886,7 +887,7 @@ p {
 }
 
 .drinks {
-  stroke: #B5C499;
+  stroke: #b5c499;
 }
 
 .drinks:hover {
@@ -896,8 +897,6 @@ p {
 .food:hover {
   fill: #393331;
 }
-
-
 
 .icon-name:hover {
   color: var(--green);
@@ -936,7 +935,7 @@ p {
 
 .underlined {
   text-decoration: underline;
-  color: #C27060;
+  color: #c27060;
 }
 
 .checkbox-text {
@@ -950,7 +949,6 @@ p {
   vertical-align: middle;
   align-items: center;
 }
-
 
 #app {
   width: 250px;
@@ -1004,7 +1002,6 @@ p {
 }
 
 @media only screen and (max-width: 1200px) {
-
   /*---------nav - Olga --------*/
 
   .bookbtn {
@@ -1045,7 +1042,7 @@ p {
   }
 
   .leaf2 {
-    top: -15%
+    top: -15%;
   }
 
   .leaf3 {
@@ -1072,7 +1069,6 @@ p {
     bottom: -8%;
     left: -6%;
   }
-
 
   /*-------- booking - Marius --------*/
 
@@ -1232,7 +1228,6 @@ p {
 }
 
 @media only screen and (max-width: 900px) {
-
   /*---------nav - Olga --------*/
 
   .bookbtn {
@@ -1281,7 +1276,7 @@ p {
   }
 
   .leaf2 {
-    top: -15%
+    top: -15%;
   }
 
   .leaf3 {
@@ -1318,7 +1313,7 @@ p {
 
   .leaf10 {
     left: 35%;
-    top: 20%
+    top: 20%;
   }
 
   .leaf11 {
@@ -1483,6 +1478,7 @@ p {
     width: 90px;
   }
 
+  /* -- menu style - Vlada */
   .menu-list {
     grid-template-columns: 1fr;
     width: 100%;
@@ -1542,6 +1538,51 @@ p {
     height: 10vw;
   }
 
+  /* --- Our Favourites style - Vlada ----  */
+  .main-heading {
+    font-size: 3.3rem;
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .menu-favourites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu-favourites article {
+    margin-top: 30px;
+  }
+
+  .menu-favourites article:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  .menu-favourites article:nth-child(4) {
+    margin-top: 30px;
+  }
+
+  .navigate-btn {
+    width: 30%;
+    margin-top: 50px;
+  }
+
+  .navigate-btn p {
+    font-size: 4vw;
+  }
+
+  .navigate-btn-bord {
+    position: absolute;
+    top: 91.5%;
+    right: 25%;
+    width: 11em;
+    height: 3.6em;
+    transform: rotate(-9deg);
+  }
+
   .spin-popup {
     width: 300px;
     height: auto;
@@ -1565,14 +1606,13 @@ p {
 
   .underlined {
     text-decoration: underline;
-    color: #C27060;
+    color: #c27060;
   }
 
   .checkbox-text {
     align-items: left !important;
     font-size: 10px;
   }
-
 
   #app {
     order: 2;
@@ -1581,7 +1621,6 @@ p {
     margin-right: 0;
     margin-bottom: 20px;
   }
-
 
   .marker {
     width: 20px;
