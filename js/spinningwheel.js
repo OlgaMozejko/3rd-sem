@@ -79,7 +79,7 @@ export default class SpinTheWheel {
           <label for="vehicle1">I accept terms and conditions.</label><br>
           </form>
           <p class="booking-additional text-center" >*We are going to get back to you with the confirmation.</p>
-          <img src="img/icons/luck.svg" class="request-button spin" onclick="closeSpin();" type="submit" value="Submit">
+          <img src="img/icons/luck.svg" class="request-button spin" type="submit" value="Submit">
         </div>
         </div>
         
