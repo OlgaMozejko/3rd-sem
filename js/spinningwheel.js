@@ -67,7 +67,7 @@ export default class SpinTheWheel {
         <div class="spin-flexbox">
         <div id="app">
        <img class="marker" src="img/icons/marker.svg" />
-       <img class="wheel" src="img/icons/wheel-sun.svg" />
+       <img class="wheel" src="img/wheel2.png" />
        </div>
         <div class="spin-container">
           <p class="booking-title">Spin to win!</p>
@@ -105,7 +105,7 @@ export default class SpinTheWheel {
       // Calculate a new rotation between 5000 and 10 000
       deg = Math.floor(5000 + Math.random() * 5000);
       // Set the transition on the wheel
-      wheel.style.transition = 'all 10s ease-out';
+      wheel.style.transition = 'all 5s ease-out';
       // Rotate the wheel
       wheel.style.transform = `rotate(${deg}deg)`;
       // Apply the blur
