@@ -24,6 +24,10 @@ window.nextBooking = function (value) {
   _bookingService._nextBooking(value);
 };
 
+window.closeSpin = function () {
+  _spinTheWheel._closeSpin();
+};
+
 
 window.pageChange = function () {
   _spaService.pageChange();
@@ -60,9 +64,9 @@ document.getElementById("navbtn").addEventListener("click", function () {
   return open();
 });
 
-document.getElementById("navlink").addEventListener("click", function() {
-  if ( document.getElementById("navi").style.width == "100%" ) {
-      return close();
+document.getElementById("navlink").addEventListener("click", function () {
+  if (document.getElementById("navi").style.width == "100%") {
+    return close();
   }
 });
 

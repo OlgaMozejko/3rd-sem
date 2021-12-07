@@ -1,6 +1,7 @@
 export default class SpinTheWheel {
   constructor() {
     this.SpinTheWheel();
+    this.spinWheel();
   }
 
   // Spin The Wheel pop-up - Marius
@@ -60,9 +61,15 @@ export default class SpinTheWheel {
 
   SpinTheWheel() {
     document.querySelector("#spin-wheel").innerHTML += /*html*/ `
-      <div class="booking-popup">
-        <img src="img/icons/close-icon.svg" class="close-icon" onclick="closeBooking();">
-        <div class="booking-container">
+      <div class="spin-popup">
+        <img src="img/icons/close-icon.svg" class="close-icon" onclick="closeSpin();">
+
+        <div class="spin-flexbox">
+        <div id="app">
+       <img class="marker" src="img/icons/marker.svg" />
+       <img class="wheel" src="img/icons/wheel-sun.svg" />
+       </div>
+        <div class="spin-container">
           <p class="booking-title">Spin to win!</p>
           <p class="booking-subtitle">Enter your email for the chance to win different offers!</p>
           <form action="/action_page.php">
@@ -72,25 +79,54 @@ export default class SpinTheWheel {
           <label for="vehicle1">I accept terms and conditions.</label><br>
           </form>
           <p class="booking-additional text-center" >*We are going to get back to you with the confirmation.</p>
-          <img src="img/icons/luck.svg" class="request-button" onclick="closeBooking();" type="submit" value="Submit">
-      </div>
+          <img src="img/icons/luck.svg" class="request-button spin" onclick="closeSpin();" type="submit" value="Submit">
+        </div>
+        </div>
+        
+
 
       </div>
       `;
   }
 
-  _closeBooking() {
-    const bookingWindow = document.querySelector(".booking-popup");
-    const bookingSuccess = document.querySelector(".success");
-    bookingSuccess.style.display = "none";
-    bookingWindow.style.display = "none";
+  _closeSpin() {
+    const spinWindow = document.querySelector(".spin-popup");
+    spinWindow.style.display = "none";
   }
 
-  _nextBooking() {
-    const bookingWindow = document.querySelector(".booking-popup");
-    const bookingSuccess = document.querySelector(".success");
-    bookingSuccess.style.display = "block";
-    bookingWindow.style.display = "none";
+  spinWheel() {
+    const wheel = document.querySelector('.wheel');
+    const startButton = document.querySelector('.spin');
+    let deg = 0;
+
+    startButton.addEventListener('click', () => {
+      // Disable button during spin
+      startButton.style.pointerEvents = 'none';
+      // Calculate a new rotation between 5000 and 10 000
+      deg = Math.floor(5000 + Math.random() * 5000);
+      // Set the transition on the wheel
+      wheel.style.transition = 'all 10s ease-out';
+      // Rotate the wheel
+      wheel.style.transform = `rotate(${deg}deg)`;
+      // Apply the blur
+      wheel.classList.add('blur');
+    });
+
+    wheel.addEventListener('transitionend', () => {
+      // Remove blur
+      wheel.classList.remove('blur');
+      // Enable button when spin is over
+      startButton.style.pointerEvents = 'auto';
+      // Need to set transition to none as we want to rotate instantly
+      wheel.style.transition = 'none';
+      // Calculate degree on a 360 degree basis to get the "natural" real rotation
+      // Important because we want to start the next spin from that one
+      // Use modulus to get the rest value from 360
+      const actualDeg = deg % 360;
+      // Set the real rotation instantly without animation
+      wheel.style.transform = `rotate(${actualDeg}deg)`;
+    });
   }
+
 
 }

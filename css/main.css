@@ -20,7 +20,7 @@
 }
 
 /* ---------- page styling - Olga ---------- */
-html ,
+html,
 body {
   max-width: 100%;
   margin: 0 auto;
@@ -279,6 +279,8 @@ p {
 }
 
 .booking-title {
+  font-family: kansasnew, serif;
+  font-weight: 700;
   color: var(--main-green);
   font-size: 30px;
   line-height: 0;
@@ -685,7 +687,91 @@ p {
   fill: var(--text-color);
 } */
 
-@media only screen and (max-width: 1200px) {
+/*-------- spin the wheel - Marius --------*/
+
+.spin-popup {
+  display: block;
+  position: fixed;
+  margin: 0 auto;
+  width: 700px;
+  height: auto;
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spin-flexbox {
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.spin-container {
+  margin: 0 auto;
+  width: 50%;
+  text-align: left !important;
+}
+
+#app {
+  width: 250px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.marker {
+  width: 26px;
+  margin-bottom: 10px;
+}
+
+.wheel {
+  width: 250px;
+  height: 250px;
+}
+
+.button {
+  display: block;
+  width: 250px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.blur {
+  animation: blur 10s;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(1.5px);
+  }
+
+  80% {
+    filter: blur(1.5px);
+  }
+
+  100% {
+    filter: blur(0px);
+  }
+}
+
+
+
+. @media only screen and (max-width: 1200px) {
   /*-------- booking - Marius --------*/
 
   .booking-popup {
