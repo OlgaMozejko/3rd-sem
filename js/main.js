@@ -47,6 +47,29 @@ window.seeDrinks = function () {
   _menuService.seeDrinks();
 };
 
+
+
+//nav
+
+document.getElementById("navbtn").addEventListener("click", function() {
+  if ( document.getElementById("navi").style.width == "100%" ) {
+      return close();
+  }
+  return open();
+});
+
+window.open = function () {
+  document.getElementById("navi").style.width = "100%";
+}
+
+window.close = function () {
+   document.getElementById("navi").style.width = "0%";
+}
+
+
+
+// scroll
+
 var scrollPosition = window.scrollY;
 var cover = document.getElementsByClassName("cover")[0];
 

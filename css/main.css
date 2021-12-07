@@ -1,4 +1,4 @@
-/* ---------- root variables ---------- */
+/* ---------- root variables - Olga ---------- */
 :root {
   --text-color: #393331;
   --main-green: #395443;
@@ -19,10 +19,8 @@
   --placeholder: #000000;
 }
 
-/* ---------- page styling ---------- */
-html {
-}
-
+/* ---------- page styling - Olga ---------- */
+html ,
 body {
   max-width: 100%;
   margin: 0 auto;
@@ -52,9 +50,9 @@ p {
   font-family: montserrat, sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* font-size: 18pt; */
   color: var(--text-color);
 }
+
 
 /* ---------- general styling ---------- */
 
@@ -64,26 +62,55 @@ p {
 
 .page {
   display: none;
-
   animation: fadeIn 0.4s;
-
   padding: 0;
 }
 
-/*--------- nav ----------*/
-/*
-.tabbar {
- 
+/*--------- nav - Olga ----------*/
+
+.navbtn {
+  display: flex;
+  position: fixed;
+  z-index: 90;
+  right: 0;
+  margin: 1em;
+  cursor: pointer;
 }
 
 
-
-.nav-link {
-
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--background);
+  overflow-x: hidden;
+  transition: 0.5s;
+  font-family: kansasnew, serif;
+  font-weight: 800;
 }
-*/
 
-/*--------- main - scrolling -----------*/
+.overlay-content {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 32px;
+  color: var(--text-color);
+  display: block;
+  transition: 0.4s;
+}
+
+
+/*--------- main - scrolling - Olga -----------*/
 
 .cover {
   height: 100vh;
@@ -99,13 +126,13 @@ p {
 }
 
 .container {
-  height: 50rem;
+  height: 100%;
   position: relative;
   z-index: 1;
   background: white;
 }
 
-/*------main - front -----*/
+/*------main - front - Olga -----*/
 
 .sun {
   display: flex;
@@ -199,7 +226,6 @@ p {
   }
 }
 
-/*-------- menu --------*/
 
 /*-------- booking - Marius --------*/
 
