@@ -227,12 +227,15 @@ export default class MenuService {
     </button> 
     </div>
     `;
-    document.querySelector(".icon-body1").addEventListener("mouseover", function () {
-      document.querySelector(".icon-body1").style.backgroundImage = "url('../img/icons/hover.svg')"
-    });
     document.querySelector(".icon-body2").addEventListener("mouseover", function () {
       document.querySelector(".icon-body2").style.backgroundImage = "url('../img/icons/hover.svg')"
     });
+
+    document.querySelector(".icon-body2").addEventListener("mouseout", function () {
+      document.querySelector(".icon-body2").style.backgroundImage = "none"
+    });
+
+
   }
 
   seeFood() {
@@ -251,6 +254,21 @@ export default class MenuService {
     document.querySelector(".icon-body1").style.backgroundImage = "url('../img/icons/hover.svg')";
     document.querySelector(".icon-body2").style.backgroundImage = "none";
 
+    document.querySelector(".icon-body1").addEventListener("mouseover", function () {
+      document.querySelector(".icon-body1").style.backgroundImage = "url('../img/icons/hover.svg')"
+    });
+    document.querySelector(".icon-body1").addEventListener("mouseout", function () {
+      document.querySelector(".icon-body1").style.backgroundImage = "url('../img/icons/hover.svg')"
+    });
+
+    document.querySelector(".icon-body2").addEventListener("mouseover", function () {
+      document.querySelector(".icon-body2").style.backgroundImage = "url('../img/icons/hover.svg')"
+    });
+
+    document.querySelector(".icon-body2").addEventListener("mouseout", function () {
+      document.querySelector(".icon-body2").style.backgroundImage = "none"
+    });
+
 
   }
 
@@ -267,6 +285,22 @@ export default class MenuService {
     document.querySelector(".icon-body2").classList.add(".icon-active");
     document.querySelector(".food").style.fill = "#B5C499";
     document.querySelector(".drinks").style.stroke = "#393331";
+
+    document.querySelector(".icon-body1").addEventListener("mouseover", function () {
+      document.querySelector(".icon-body1").style.backgroundImage = "url('../img/icons/hover.svg')"
+    });
+    document.querySelector(".icon-body1").addEventListener("mouseout", function () {
+      document.querySelector(".icon-body1").style.backgroundImage = "none"
+    });
+
+    document.querySelector(".icon-body2").addEventListener("mouseover", function () {
+      document.querySelector(".icon-body2").style.backgroundImage = "url('../img/icons/hover.svg')"
+    });
+
+    document.querySelector(".icon-body2").addEventListener("mouseout", function () {
+      document.querySelector(".icon-body2").style.backgroundImage = "url('../img/icons/hover.svg')"
+    });
+
     document.querySelector(".icon-body1").style.backgroundImage = "none";
     document.querySelector(".icon-body2").style.backgroundImage = "url('../img/icons/hover.svg')";
   }
