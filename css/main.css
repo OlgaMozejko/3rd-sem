@@ -155,6 +155,7 @@ p {
 /*--------- main - scrolling - Olga -----------*/
 
 .cover {
+  width: 100vw;
   height: 100vh;
   display: flex;
   position: relative;
@@ -1010,6 +1011,50 @@ p {
     padding: 0.8em;
   }
 
+  .flowers-img{
+    position: absolute;
+    width: 10em;
+  }
+  
+  .flowers-img2{
+    position: absolute;
+    width: 5em;
+  }
+
+  .leaf1 {
+    top: -10%;
+  }
+
+  .leaf2 {
+    top: -15%
+  }
+
+  .leaf3 {
+    top: -20%;
+  }
+
+  .leaf4 {
+    top: 2%;
+  }
+
+  .leaf5 {
+    right: 0%;
+  }
+
+  .leaf6 {
+    bottom: -10%;
+  }
+
+  .leaf7 {
+    bottom: -12%;
+  }
+
+  .leaf8 {
+    bottom: -8%;
+    left: -6%;
+  }
+
+
   /*-------- booking - Marius --------*/
 
   .booking-popup {
@@ -1200,6 +1245,66 @@ p {
   .sun-border {
     width: 12em!important;
     padding: 0.5em;
+  }
+
+  .flowers-img{
+    position: absolute;
+    width: 8em;
+  }
+  
+  .flowers-img2{
+    position: absolute;
+    width: 3em;
+  }
+
+  .leaf1 {
+    top: -10%;
+  }
+
+  .leaf2 {
+    top: -15%
+  }
+
+  .leaf3 {
+    top: -20%;
+  }
+
+  .leaf4 {
+    top: 2%;
+    right: -8%;
+  }
+
+  .leaf5 {
+    bottom: 10%;
+    right: -10%;
+  }
+
+  .leaf6 {
+    bottom: -10%;
+    right: 4%;
+  }
+
+  .leaf7 {
+    bottom: -12%;
+  }
+
+  .leaf8 {
+    bottom: 10%;
+    left: -6%;
+  }
+
+  .leaf9 {
+    top: 8%;
+  }
+
+  .leaf10 {
+    left: 35%;
+    top: 20%
+  }
+
+  .leaf11 {
+    right: 10%;
+    top: 35%;
   }
 
   /*-----------Marius --------------*/
