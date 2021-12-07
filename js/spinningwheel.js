@@ -75,10 +75,12 @@ export default class SpinTheWheel {
           <form action="/action_page.php">
           <p class="booking-required">required*</p>
           <input class="booking-field" placeholder="Your e-mail" name="Email" type="email" required>
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-          <label for="vehicle1">I accept terms and conditions.</label><br>
+          <div class="checkbox-box">
+          <input type="checkbox" id="termsCheckbox" name="termsCheckbox" value="Bike">
+          <label class="checkbox-text" for="termsCheckbox">I accept <span class="underlined">terms and conditions</span>.</label>
+          </div>
           </form>
-          <p class="booking-additional text-center" >*We are going to get back to you with the confirmation.</p>
+          <p class="booking-additional" >*We are going to get back to you with the confirmation.</p>
           <img src="img/icons/luck.svg" class="request-button spin" type="submit" value="Submit">
         </div>
         </div>

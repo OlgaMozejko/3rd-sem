@@ -216,7 +216,7 @@ p {
   align-items: center;
   justify-content: center;
   margin: 0;
-  width: 28em!important;
+  width: 28em !important;
   background-color: var(--green-light);
   padding: 1em;
   border-radius: 50%;
@@ -288,12 +288,12 @@ p {
   position: absolute;
 }
 
-.flowers-img{
+.flowers-img {
   position: absolute;
   width: 15em;
 }
 
-.flowers-img2{
+.flowers-img2 {
   position: absolute;
   width: 6em;
 }
@@ -371,6 +371,7 @@ p {
   right: 22%;
   top: 15%;
 }
+
 /*-------- booking - Marius --------*/
 
 .booking-popup {
@@ -933,6 +934,24 @@ p {
   text-align: left !important;
 }
 
+.underlined {
+  text-decoration: underline;
+  color: #C27060;
+}
+
+.checkbox-text {
+  font-size: 12px;
+}
+
+.checkbox-box {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  align-items: center;
+}
+
+
 #app {
   width: 250px;
   height: 350px;
@@ -1007,16 +1026,16 @@ p {
   }
 
   .sun-border {
-    width: 20em!important;
+    width: 20em !important;
     padding: 0.8em;
   }
 
-  .flowers-img{
+  .flowers-img {
     position: absolute;
     width: 10em;
   }
-  
-  .flowers-img2{
+
+  .flowers-img2 {
     position: absolute;
     width: 5em;
   }
@@ -1214,9 +1233,9 @@ p {
 
 @media only screen and (max-width: 900px) {
 
-   /*---------nav - Olga --------*/
+  /*---------nav - Olga --------*/
 
-   .bookbtn {
+  .bookbtn {
     font-size: 0.6em;
     margin-bottom: 4em;
   }
@@ -1243,16 +1262,16 @@ p {
   }
 
   .sun-border {
-    width: 12em!important;
+    width: 12em !important;
     padding: 0.5em;
   }
 
-  .flowers-img{
+  .flowers-img {
     position: absolute;
     width: 8em;
   }
-  
-  .flowers-img2{
+
+  .flowers-img2 {
     position: absolute;
     width: 3em;
   }
@@ -1521,5 +1540,63 @@ p {
   .filter-img {
     width: 10vw;
     height: 10vw;
+  }
+
+  .spin-popup {
+    width: 300px;
+    height: auto;
+  }
+
+  .spin-flexbox {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spin-container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center !important;
+    order: 1;
+  }
+
+  .underlined {
+    text-decoration: underline;
+    color: #C27060;
+  }
+
+  .checkbox-text {
+    align-items: left !important;
+    font-size: 10px;
+  }
+
+
+  #app {
+    order: 2;
+    width: 100%;
+    height: 250px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+
+  .marker {
+    width: 20px;
+    margin-bottom: 10px;
+  }
+
+  .wheel {
+    width: 200px;
+    height: 200px;
+  }
+
+  .button {
+    display: block;
+    width: 250px;
+    margin: 40px auto;
+    cursor: pointer;
   }
 }
