@@ -9,7 +9,7 @@
   --yellow: #fef481;
   --pink: #fdd4cc;
   --blue: #b8d7f1;
-  --gree-light: #b6c69b;
+  --green-light: #b6c69b;
   --yellow-light: #fff9f0;
   --pink-light: #fdeae5;
   --blue-light: #c5def3;
@@ -209,6 +209,18 @@ p {
   padding: 0;
 }
 
+.sun-border {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 28em!important;
+  background-color: var(--green-light);
+  padding: 1em;
+  border-radius: 50%;
+}
+
 .wink-box {
   position: absolute;
 }
@@ -268,6 +280,96 @@ p {
   }
 }
 
+.green-bg {
+  background-color: var(--green-light);
+  height: 100%;
+  width: 50%;
+  position: absolute;
+}
+
+.flowers-img{
+  position: absolute;
+  width: 15em;
+}
+
+.flowers-img2{
+  position: absolute;
+  width: 6em;
+}
+
+.flowers {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /*z-index: 2; */
+}
+
+.leaf1 {
+  transform: rotate(130deg);
+  left: 0%;
+  top: -12%;
+}
+
+.leaf2 {
+  transform: rotate(105deg);
+  top: -20%;
+  left: 25%;
+}
+
+.leaf3 {
+  transform: rotate(-135deg);
+  top: -28%;
+  left: 65%;
+}
+
+.leaf4 {
+  transform: rotate(230deg);
+  top: -3%;
+  right: 0%;
+}
+
+.leaf5 {
+  transform: rotate(-60deg);
+  right: -3%;
+  bottom: 15%;
+}
+
+.leaf6 {
+  transform: rotate(-20deg);
+  bottom: -20%;
+  right: 12%;
+}
+
+.leaf7 {
+  transform: rotate(30deg);
+  bottom: -20%;
+  left: 15%;
+}
+
+.leaf8 {
+  transform: rotate(20deg);
+  left: -7%;
+  bottom: -15%;
+}
+
+.leaf9 {
+  transform: rotate(130deg);
+  left: -5%;
+  top: 25%;
+}
+
+.leaf10 {
+  left: 12%;
+  top: 30%;
+}
+
+.leaf11 {
+  right: 22%;
+  top: 15%;
+}
 /*-------- booking - Marius --------*/
 
 .booking-popup {
@@ -882,6 +984,32 @@ p {
 }
 
 @media only screen and (max-width: 1200px) {
+
+  /*---------nav - Olga --------*/
+
+  .bookbtn {
+    font-size: 0.8em;
+    margin-bottom: 4em;
+  }
+
+  .bookbtn-bord {
+    width: 5em;
+    height: 4em;
+    margin-bottom: 3.4em;
+    margin-right: 1.6em;
+  }
+
+  /*---------front Olga ---------*/
+
+  .sun img {
+    width: 10em;
+  }
+
+  .sun-border {
+    width: 20em!important;
+    padding: 0.8em;
+  }
+
   /*-------- booking - Marius --------*/
 
   .booking-popup {
@@ -1040,6 +1168,42 @@ p {
 }
 
 @media only screen and (max-width: 900px) {
+
+   /*---------nav - Olga --------*/
+
+   .bookbtn {
+    font-size: 0.6em;
+    margin-bottom: 4em;
+  }
+
+  .bookbtn-bord {
+    width: 3.8em;
+    height: 3em;
+    margin-bottom: 2.4em;
+    margin-right: 1.1em;
+  }
+
+  .navbtn {
+    margin: 1.2em;
+  }
+
+  .overlay a {
+    font-size: 1em;
+  }
+
+  /*---------front Olga ---------*/
+
+  .sun img {
+    width: 6em;
+  }
+
+  .sun-border {
+    width: 12em!important;
+    padding: 0.5em;
+  }
+
+  /*-----------Marius --------------*/
+
   .booking-popup {
     width: 310px;
     border-radius: 14px;
