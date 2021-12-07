@@ -96,6 +96,8 @@ export default class SpinTheWheel {
     spinWindow.style.display = "none";
   }
 
+  // spin the wheel code from https://github.com/weibenfalk/vanilla-js-wheel-of-fortune  and adapted to our project
+
   spinWheel() {
     const wheel = document.querySelector('.wheel');
     const startButton = document.querySelector('.spin');
