@@ -59,7 +59,7 @@ export default class BookingService {
 
 
   booking() {
-    document.querySelector("#cafe-menu").innerHTML += /*html*/ `
+    document.querySelector("#booking-popup").innerHTML += /*html*/ `
       <div class="booking-popup">
         <img src="img/icons/close-icon.svg" class="close-icon" onclick="closeBooking();">
         <div class="booking-container">
