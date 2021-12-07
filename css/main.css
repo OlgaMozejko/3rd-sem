@@ -72,8 +72,26 @@ p {
   z-index: 101;
   bottom: 0;
   right: 0;
-  margin: 1em;
+  margin-right: 2.5em;
+  margin-bottom: 5em;
   cursor: pointer;
+  background-color: var(--pink-light);
+  padding: 0.6em 1.4em;
+  border-radius: 50%;
+}
+
+.bookbtn-bord {
+  position: fixed;
+  z-index: 101;
+  bottom: 0;
+  right: 0;
+  border: 0.2em solid var(--text-color);
+  width: 6.2em;
+  height: 4.4em;
+  border-radius: 50%;
+  transform: rotate(-40deg);
+  margin-right: 1.9em;
+  margin-bottom: 5.2em;
 }
 
 .navbtn {
