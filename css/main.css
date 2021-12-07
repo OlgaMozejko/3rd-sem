@@ -80,6 +80,11 @@ p {
   border-radius: 50%;
 }
 
+.bookbtn p {
+  font-family: kansasnew, serif;
+  font-weight: 700;
+}
+
 .bookbtn-bord {
   position: fixed;
   z-index: 101;
@@ -91,7 +96,7 @@ p {
   border-radius: 50%;
   transform: rotate(-40deg);
   margin-right: 1.9em;
-  margin-bottom: 5.2em;
+  margin-bottom: 5.4em;
 }
 
 .navbtn {
@@ -715,6 +720,13 @@ p {
 .filter-img {
   width: 5vw;
   height: 5vw;
+  stroke: var(--main-pink);
+  fill: var(--main-pink);
+}
+
+.filter-img:hover {
+  stroke: var(--main-green);
+  fill: var(--main-green);
 }
 
 .icon-name:hover {

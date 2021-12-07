@@ -205,7 +205,7 @@ export default class MenuService {
     <div class="icons-filter">
     <button id="foods-menu" class="button-filter" onclick="readFoods(this.foods); seeFood();">
     <div class="icon-body1">
-    <svg width="57" height="70" viewBox="0 0 57 70" fill="#393331" xmlns="http://www.w3.org/2000/svg" class="filter-img">
+    <svg width="57" height="70" viewBox="0 0 57 70"  xmlns="http://www.w3.org/2000/svg" class="filter-img">
 <path d="M28.3921 2.07831C28.5014 2.72089 30.5909 14.9982 30.5909 19.6876C30.5909 26.838 26.7943 31.9376 21.1814 33.9884L22.9431 66.541C23.0387 68.4141 21.5502 70 19.6656 70H10.9253C9.05435 70 7.55212 68.4277 7.64772 66.541L9.40942 33.9884C3.78289 31.9376 0 26.8243 0 19.6876C0 14.9845 2.08947 2.72089 2.19872 2.07831C2.63573 -0.697068 8.38517 -0.738084 8.74025 2.2287V21.5333C8.91778 21.9982 10.8024 21.9708 10.9253 21.5333C11.1165 18.0744 12.0042 2.50214 12.0178 2.14667C12.4685 -0.697068 18.1224 -0.697068 18.5594 2.14667C18.5867 2.51581 19.4607 18.0744 19.6519 21.5333C19.7748 21.9708 21.6731 21.9982 21.837 21.5333V2.2287C22.192 -0.724412 27.9551 -0.697068 28.3921 2.07831V2.07831ZM44.6709 41.1388L42.6224 66.4453C42.4585 68.3594 43.9744 70 45.8863 70H53.534C55.3503 70 56.8116 68.5371 56.8116 66.7188V3.28144C56.8116 1.47675 55.3503 0.000195405 53.534 0.000195405C42.2673 0.000195405 23.2982 24.4044 44.6709 41.1388Z" fill="#393331"/>
 </svg>
     <p class="icon-name">meals</p>
@@ -214,11 +214,11 @@ export default class MenuService {
      <button class="button-filter" onclick="seeDrinks(); appendDrinks()">
     <div class="icon-body2">
      <svg width="94" height="80" viewBox="0 0 94 80" xmlns="http://www.w3.org/2000/svg" class="filter-img">
-<path d="M5 32.2227C5 55.8476 16.526 75.0003 39.578 75.0003C62.63 75.0003 74.156 55.8476 74.156 32.2227H5Z" stroke="#B5C499" stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M39.5781 20.5556V5" stroke="#B5C499" stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M58.7871 20.5554V12.7773" stroke="#B5C499" stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M20.3682 20.5554V12.7773" stroke="#B5C499" stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M70.6787 52.8784C72.5805 47.8539 73.7024 42.2111 74.0443 36.2105C74.7071 36.1444 75.3852 36.1113 76.0767 36.1113C83.5034 36.1113 89.5238 40.0294 89.5238 44.8614C89.5238 49.6934 83.5034 53.6115 76.0767 53.6115C74.1557 53.6115 72.3308 53.349 70.6787 52.8784Z" stroke="#B5C499" stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 32.2227C5 55.8476 16.526 75.0003 39.578 75.0003C62.63 75.0003 74.156 55.8476 74.156 32.2227H5Z"  stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39.5781 20.5556V5"  stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M58.7871 20.5554V12.7773"  stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.3682 20.5554V12.7773"  stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M70.6787 52.8784C72.5805 47.8539 73.7024 42.2111 74.0443 36.2105C74.7071 36.1444 75.3852 36.1113 76.0767 36.1113C83.5034 36.1113 89.5238 40.0294 89.5238 44.8614C89.5238 49.6934 83.5034 53.6115 76.0767 53.6115C74.1557 53.6115 72.3308 53.349 70.6787 52.8784Z"  stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
     <p class="icon-name">drinks</p>
     </div>
