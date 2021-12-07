@@ -3,10 +3,12 @@
 import SpaService from "./spa-service.js";
 import MenuService from "./menu-service.js";
 import BookingService from "./booking.js";
+import SpinTheWheel from "./spinningwheel.js";
 
 let _spaService = new SpaService("home");
 let _menuService = new MenuService();
 let _bookingService = new BookingService();
+let _spinTheWheel = new SpinTheWheel();
 let _selectedUserId = "";
 let _selectedImgFile = "";
 
@@ -15,11 +17,11 @@ window.selectBooking = function (value) {
 };
 
 window.closeBooking = function (value) {
-    _bookingService._closeBooking(value);
+  _bookingService._closeBooking(value);
 };
 
 window.nextBooking = function (value) {
-    _bookingService._nextBooking(value);
+  _bookingService._nextBooking(value);
 };
 
 
@@ -51,9 +53,9 @@ window.seeDrinks = function () {
 
 //nav
 
-document.getElementById("navbtn").addEventListener("click", function() {
-  if ( document.getElementById("navi").style.width == "100%" ) {
-      return close();
+document.getElementById("navbtn").addEventListener("click", function () {
+  if (document.getElementById("navi").style.width == "100%") {
+    return close();
   }
   return open();
 });
@@ -69,7 +71,7 @@ window.open = function () {
 }
 
 window.close = function () {
-   document.getElementById("navi").style.width = "0%";
+  document.getElementById("navi").style.width = "0%";
 }
 
 
