@@ -567,7 +567,56 @@ p {
   display: none;
 }
 
-/*-------- menu - Vlada --------*/
+/* -------- Our Favourites - Vlada ------ */
+.menu-favourites {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(2, 400px);
+  grid-column-gap: 40px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  margin: 0;
+}
+
+.menu-favourites article:nth-child(2) {
+  margin-top: 150px;
+}
+
+.menu-favourites article:nth-child(4) {
+  margin-top: 210px;
+}
+
+.navigate-btn {
+  z-index: 999;
+  cursor: pointer;
+  background-color: var(--pink-light);
+  padding: 5px 40px;
+  width: 10%;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 220px;
+}
+
+.navigate-btn p {
+  font-family: montserrat, serif;
+  font-weight: 700;
+  color: var(--dark-orange);
+  text-align: center;
+}
+
+.navigate-btn-bord {
+  position: absolute;
+  top: 169vh;
+  right: 43vw;
+  margin: 0 auto;
+  border: 0.2em solid var(--text-color);
+  width: 12em;
+  height: 3.6em;
+  border-radius: 50%;
+  transform: rotate(-8deg);
+}
+
+/*-------- Menu - Vlada --------*/
 .menu-head {
   text-align: center;
   color: var(--text-color);
@@ -632,6 +681,7 @@ p {
   font-size: 1vw;
   text-align: right;
   padding: 0 5px;
+  margin-bottom: 0;
 }
 
 .drink-text {
@@ -748,11 +798,6 @@ p {
 .icon-name:hover {
   color: var(--green);
 }
-
-/* .filter-img:hover {
-  stroke: var(--text-color);
-  fill: var(--text-color);
-} */
 
 /*-------- spin the wheel - Marius --------*/
 

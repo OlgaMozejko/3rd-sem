@@ -24,7 +24,7 @@ export default class MenuService {
     this.seeFood();
   }
 
-  /* ---- menu display - Vlada ----- */
+  /* ---- menu display - VLADA ----- */
   /*--- reading different kind of menu items -----*/
   readFoods() {
     // ========== READ ==========
@@ -202,6 +202,7 @@ export default class MenuService {
     this.readCocktails(this.cocktails);
   }
 
+  // function for appending favourite menu items to home page
   appendFavourites(foods) {
     let htmlTemplate = "";
     for (let item of foods) {
@@ -259,6 +260,7 @@ export default class MenuService {
 
   }
 
+  // function for changing style when viewing food menu
   seeFood() {
     document.querySelector("#menu-list").style.display = "grid";
     document.querySelector("#beer-list").style.display = "none";
@@ -293,6 +295,7 @@ export default class MenuService {
 
   }
 
+  // function for changing style when viewing drink menu
   seeDrinks() {
     document.querySelector("#menu-list").style.display = "none";
     document.querySelector("#beer-list").style.display = "grid";
