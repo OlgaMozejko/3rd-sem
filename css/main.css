@@ -1,6 +1,6 @@
 /* ---------- root variables ---------- */
 :root {
-  --text-color: #0e0e0e;
+  --text-color: #393331;
   --main-green: #395443;
   --main-yellow: #fcca3b;
   --main-pink: #e50069;
@@ -20,7 +20,8 @@
 }
 
 /* ---------- page styling ---------- */
-html {}
+html {
+}
 
 body {
   max-width: 100%;
@@ -498,6 +499,15 @@ p {
 }
 
 /*-------- menu - Vlada --------*/
+.menu-head {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.menu-next {
+  display: block;
+}
+
 .menu-list {
   width: 70%;
   display: grid;
@@ -556,10 +566,12 @@ p {
 }
 
 .drink-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--yellow-light);
   padding: 0.5vw;
   border-radius: 20px;
-  margin-top: 10px;
 }
 
 .warmdrink-heading,
@@ -567,6 +579,13 @@ p {
 .beer-heading,
 .cocktails-heading {
   display: none;
+  text-align: center;
+  font-size: 2.5vw;
+  margin-top: 100px;
+}
+
+.warmdrink-heading {
+  margin-top: 0;
 }
 
 #colddrink-list,
@@ -575,6 +594,48 @@ p {
 #cocktails-list {
   display: none;
 }
+
+.icons-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.button-filter {
+  border: 0;
+  background: 0;
+  margin: 0 15px;
+}
+
+.icon-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+}
+
+.icon-body:hover {
+  background-image: url("../img/icons/hover.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  color: var(--main-green);
+}
+
+.filter-img {
+  width: 5vw;
+  height: 5vw;
+}
+
+.icon-name:hover {
+  color: var(--green);
+}
+
+/* .filter-img:hover {
+  stroke: var(--text-color);
+  fill: var(--text-color);
+} */
 
 @media only screen and (max-width: 1200px) {
   /*-------- booking - Marius --------*/
