@@ -68,13 +68,35 @@ p {
 
 /*--------- nav - Olga ----------*/
 
+.bookbtn {
+  position: fixed;
+  z-index: 101;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+  cursor: pointer;
+}
+
 .navbtn {
   position: fixed;
   z-index: 101;
   top: 0;
   right: 0;
-  margin: 1em;
+  margin: 2.5em;
   cursor: pointer;
+  height: 2em;
+}
+
+.line {
+  display: flex;
+  z-index: 200;
+  width: 2.8em;
+  height: 0.4em;
+  background-color: var(--text-color);
+  margin: 0.3em;
+  transition: 0.6s ease-in-out;
+  transform: rotate(0deg) translate(0em);
+  border-radius: 0.5em;
 }
 
 
