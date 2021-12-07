@@ -53,7 +53,6 @@ p {
   color: var(--text-color);
 }
 
-
 /* ---------- general styling ---------- */
 
 .text-center {
@@ -99,7 +98,6 @@ p {
   border-radius: 0.5em;
 }
 
-
 .overlay {
   height: 100%;
   width: 0;
@@ -130,7 +128,6 @@ p {
   display: block;
   transition: 0.4s;
 }
-
 
 /*--------- main - scrolling - Olga -----------*/
 
@@ -247,7 +244,6 @@ p {
     opacity: 1;
   }
 }
-
 
 /*-------- booking - Marius --------*/
 
@@ -657,7 +653,20 @@ p {
   margin: 0 15px;
 }
 
-.icon-body {
+.icon-body1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  background-image: url("../img/icons/hover.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  color: var(--main-green);
+}
+
+.icon-body2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -671,6 +680,18 @@ p {
   background-size: 100%;
   background-position: center;
   color: var(--main-green);
+}
+
+.icon-active {
+  background-image: url("../img/icons/hover.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  color: var(--main-green);
+}
+
+.icon-notactive {
+  background-image: none;
 }
 
 .filter-img {
@@ -769,9 +790,7 @@ p {
   }
 }
 
-
-
-. @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   /*-------- booking - Marius --------*/
 
   .booking-popup {
@@ -1083,5 +1102,64 @@ p {
 
   .request-button {
     width: 90px;
+  }
+
+  .menu-list {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 30px 0;
+    margin: 0 auto;
+  }
+
+  .menu-list article {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .menu-head {
+    font-size: 2.5rem;
+  }
+
+  .menu-img {
+    width: 250px;
+    height: 150px;
+  }
+
+  .menu-text {
+    width: 250px;
+  }
+
+  .menu-heading {
+    font-size: 4vw;
+  }
+
+  .menu-description {
+    font-size: 3vw;
+  }
+
+  .menu-price {
+    font-size: 3.5vw;
+  }
+
+  .warmdrink-heading,
+  .colddrink-heading,
+  .beer-heading,
+  .cocktails-heading {
+    font-size: 5vw;
+    margin-top: 50px;
+  }
+
+  .icon-body1 {
+    width: 90px;
+  }
+
+  .filter-img {
+    width: 10vw;
+    height: 10vw;
   }
 }
