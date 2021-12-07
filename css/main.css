@@ -691,7 +691,6 @@ p {
 }
 
 .navigate-btn {
-  z-index: 999;
   cursor: pointer;
   background-color: var(--pink-light);
   padding: 5px 40px;
@@ -857,13 +856,13 @@ p {
   color: var(--main-green);
 }
 
-.icon-body1:hover {
+/* .icon-body1:hover {
   background-image: url("../img/icons/hover.svg");
 }
 
 .icon-body2:hover {
   background-image: url("../img/icons/hover.svg");
-}
+} */
 
 .icon-active {
   background-image: url("../img/icons/hover.svg");
@@ -890,17 +889,21 @@ p {
   stroke: #b5c499;
 }
 
-.drinks:hover {
+.icon-name1 {
+  color: var(--green-light);
+}
+
+/* .drinks:hover {
   stroke: #393331;
 }
 
 .food:hover {
   fill: #393331;
-}
+} */
 
-.icon-name:hover {
+/* .icon-name:hover {
   color: var(--green);
-}
+} */
 
 /*-------- spin the wheel - Marius --------*/
 
@@ -1515,10 +1518,14 @@ p {
 
   .menu-description {
     font-size: 3vw;
+    padding: 5px;
+    margin-bottom: 0;
   }
 
   .menu-price {
     font-size: 3.5vw;
+    margin-top: 0;
+    padding: 7px 10px;
   }
 
   .warmdrink-heading,
@@ -1529,13 +1536,13 @@ p {
     margin-top: 50px;
   }
 
-  .icon-body1 {
-    width: 90px;
-  }
-
   .filter-img {
     width: 10vw;
     height: 10vw;
+  }
+  .icons-filter button {
+    padding: 10px;
+    margin: 0;
   }
 
   /* --- Our Favourites style - Vlada ----  */
@@ -1576,8 +1583,8 @@ p {
 
   .navigate-btn-bord {
     position: absolute;
-    top: 91.5%;
-    right: 25%;
+    top: 94.3%;
+    right: 26%;
     width: 11em;
     height: 3.6em;
     transform: rotate(-9deg);

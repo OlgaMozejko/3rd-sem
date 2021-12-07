@@ -1,6 +1,4 @@
-import {
-  firebaseDB
-} from "./firebase-service.js";
+import { firebaseDB } from "./firebase-service.js";
 
 import {
   collection,
@@ -244,20 +242,35 @@ export default class MenuService {
 <path d="M20.3682 20.5554V12.7773"  stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M70.6787 52.8784C72.5805 47.8539 73.7024 42.2111 74.0443 36.2105C74.7071 36.1444 75.3852 36.1113 76.0767 36.1113C83.5034 36.1113 89.5238 40.0294 89.5238 44.8614C89.5238 49.6934 83.5034 53.6115 76.0767 53.6115C74.1557 53.6115 72.3308 53.349 70.6787 52.8784Z"  stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-    <p class="icon-name">drinks</p>
+    <p class="icon-name1">drinks</p>
     </div>
     </button> 
     </div>
     `;
-    document.querySelector(".icon-body2").addEventListener("mouseover", function () {
-      document.querySelector(".icon-body2").style.backgroundImage = "url('../img/icons/hover.svg')"
-    });
+    document
+      .querySelector(".icon-body2")
+      .addEventListener("mouseover", function () {
+        document.querySelector(".icon-body2").style.backgroundImage =
+          "url('../img/icons/hover.svg')";
+      });
 
-    document.querySelector(".icon-body2").addEventListener("mouseout", function () {
-      document.querySelector(".icon-body2").style.backgroundImage = "none"
-    });
+    document
+      .querySelector(".icon-body2")
+      .addEventListener("mouseout", function () {
+        document.querySelector(".icon-body2").style.backgroundImage = "none";
+      });
 
+    document
+      .querySelector(".icon-body2")
+      .addEventListener("mouseover", function () {
+        document.querySelector(".icon-name1").style.color = "#393331";
+      });
 
+    document
+      .querySelector(".icon-body2")
+      .addEventListener("mouseout", function () {
+        document.querySelector(".icon-name1").style.color = "#b6c69b";
+      });
   }
 
   // function for changing style when viewing food menu
@@ -274,25 +287,35 @@ export default class MenuService {
     document.querySelector(".icon-body1").classList.add(".icon-notactive");
     document.querySelector(".food").style.fill = "#393331";
     document.querySelector(".drinks").style.stroke = "#B5C499";
-    document.querySelector(".icon-body1").style.backgroundImage = "url('../img/icons/hover.svg')";
+    document.querySelector(".icon-body1").style.backgroundImage =
+      "url('../img/icons/hover.svg')";
     document.querySelector(".icon-body2").style.backgroundImage = "none";
 
-    document.querySelector(".icon-body1").addEventListener("mouseover", function () {
-      document.querySelector(".icon-body1").style.backgroundImage = "url('../img/icons/hover.svg')"
-    });
-    document.querySelector(".icon-body1").addEventListener("mouseout", function () {
-      document.querySelector(".icon-body1").style.backgroundImage = "url('../img/icons/hover.svg')"
-    });
+    document
+      .querySelector(".icon-body1")
+      .addEventListener("mouseover", function () {
+        document.querySelector(".icon-body1").style.backgroundImage =
+          "url('../img/icons/hover.svg')";
+      });
+    document
+      .querySelector(".icon-body1")
+      .addEventListener("mouseout", function () {
+        document.querySelector(".icon-body1").style.backgroundImage =
+          "url('../img/icons/hover.svg')";
+      });
 
-    document.querySelector(".icon-body2").addEventListener("mouseover", function () {
-      document.querySelector(".icon-body2").style.backgroundImage = "url('../img/icons/hover.svg')"
-    });
+    document
+      .querySelector(".icon-body2")
+      .addEventListener("mouseover", function () {
+        document.querySelector(".icon-body2").style.backgroundImage =
+          "url('../img/icons/hover.svg')";
+      });
 
-    document.querySelector(".icon-body2").addEventListener("mouseout", function () {
-      document.querySelector(".icon-body2").style.backgroundImage = "none"
-    });
-
-
+    document
+      .querySelector(".icon-body2")
+      .addEventListener("mouseout", function () {
+        document.querySelector(".icon-body2").style.backgroundImage = "none";
+      });
   }
 
   // function for changing style when viewing drink menu
@@ -310,24 +333,34 @@ export default class MenuService {
     document.querySelector(".food").style.fill = "#B5C499";
     document.querySelector(".drinks").style.stroke = "#393331";
 
-    document.querySelector(".icon-body1").addEventListener("mouseover", function () {
-      document.querySelector(".icon-body1").style.backgroundImage = "url('../img/icons/hover.svg')"
-    });
-    document.querySelector(".icon-body1").addEventListener("mouseout", function () {
-      document.querySelector(".icon-body1").style.backgroundImage = "none"
-    });
+    document
+      .querySelector(".icon-body1")
+      .addEventListener("mouseover", function () {
+        document.querySelector(".icon-body1").style.backgroundImage =
+          "url('../img/icons/hover.svg')";
+      });
+    document
+      .querySelector(".icon-body1")
+      .addEventListener("mouseout", function () {
+        document.querySelector(".icon-body1").style.backgroundImage = "none";
+      });
 
-    document.querySelector(".icon-body2").addEventListener("mouseover", function () {
-      document.querySelector(".icon-body2").style.backgroundImage = "url('../img/icons/hover.svg')"
-    });
+    document
+      .querySelector(".icon-body2")
+      .addEventListener("mouseover", function () {
+        document.querySelector(".icon-body2").style.backgroundImage =
+          "url('../img/icons/hover.svg')";
+      });
 
-    document.querySelector(".icon-body2").addEventListener("mouseout", function () {
-      document.querySelector(".icon-body2").style.backgroundImage = "url('../img/icons/hover.svg')"
-    });
+    document
+      .querySelector(".icon-body2")
+      .addEventListener("mouseout", function () {
+        document.querySelector(".icon-body2").style.backgroundImage =
+          "url('../img/icons/hover.svg')";
+      });
 
     document.querySelector(".icon-body1").style.backgroundImage = "none";
-    document.querySelector(".icon-body2").style.backgroundImage = "url('../img/icons/hover.svg')";
+    document.querySelector(".icon-body2").style.backgroundImage =
+      "url('../img/icons/hover.svg')";
   }
-
-
 }
