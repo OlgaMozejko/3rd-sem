@@ -695,14 +695,19 @@ p {
   justify-content: center;
   align-items: center;
   width: 80px;
-}
-
-.icon-body:hover {
-  background-image: url("../img/icons/hover.svg");
+  background-image: none;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   color: var(--main-green);
+}
+
+.icon-body1:hover {
+  background-image: url("../img/icons/hover.svg");
+}
+
+.icon-body2:hover {
+  background-image: url("../img/icons/hover.svg");
 }
 
 .icon-active {
@@ -720,14 +725,25 @@ p {
 .filter-img {
   width: 5vw;
   height: 5vw;
-  stroke: var(--main-pink);
-  fill: var(--main-pink);
 }
 
-.filter-img:hover {
-  stroke: var(--main-green);
-  fill: var(--main-green);
+.food {
+  fill: #393331;
 }
+
+.drinks {
+  stroke: #B5C499;
+}
+
+.drinks:hover {
+  stroke: #393331;
+}
+
+.food:hover {
+  fill: #393331;
+}
+
+
 
 .icon-name:hover {
   color: var(--green);
