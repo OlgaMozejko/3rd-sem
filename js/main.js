@@ -58,6 +58,12 @@ document.getElementById("navbtn").addEventListener("click", function() {
   return open();
 });
 
+document.getElementById("navlink").addEventListener("click", function() {
+  if ( document.getElementById("navi").style.width == "100%" ) {
+      return close();
+  }
+});
+
 window.open = function () {
   document.getElementById("navi").style.width = "100%";
 }
