@@ -4,11 +4,13 @@ import SpaService from "./spa-service.js";
 import MenuService from "./menu-service.js";
 import BookingService from "./booking.js";
 import SpinTheWheel from "./spinningwheel.js";
+import About from "./about.js";
 
 let _spaService = new SpaService("home");
 let _menuService = new MenuService();
 let _bookingService = new BookingService();
 let _spinTheWheel = new SpinTheWheel();
+let _about = new About();
 let _selectedUserId = "";
 let _selectedImgFile = "";
 
@@ -104,14 +106,11 @@ window.addEventListener("scroll", function () {
 
 // photos
 
-window.addEventListener("load resize scroll", function() {
-  document.getElementByClassName("static-box").each(function() {
+window.addEventListener("load resize scroll", function () {
+  document.getElementByClassName("static-box").each(function () {
     let windowTop = window.scrollTop();
     let elementTop = this.offset().top;
     let leftPosition = windowTop - elementTop;
-      this
-        .find(".move-pic")
-        .css({ left: leftPosition });
+    this.find(".move-pic").css({ left: leftPosition });
   });
 });
-

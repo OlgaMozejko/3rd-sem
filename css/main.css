@@ -746,6 +746,58 @@ p {
   transform: rotate(-8deg);
 }
 
+/* ----About section - Vlada ----- */
+.about-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--yellow-light);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+.about-heading {
+  font-weight: 900;
+  margin-top: 80px;
+  margin-bottom: 15px;
+}
+
+.about-subheading {
+  font-family: montserrat, serif;
+  color: var(--text-color);
+  font-size: 22pt;
+  font-weight: 500;
+  width: 70%;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.about-description {
+  width: 70%;
+  font-size: 10pt;
+}
+
+.about-img-container {
+  display: flex;
+  justify-self: center;
+  width: 50%;
+  background-color: var(--pink-light);
+}
+
+.about-img {
+  width: 70%;
+  padding: 50px;
+  margin: 0 auto;
+}
+
 /*-------- Menu - Vlada --------*/
 .menu-head {
   text-align: center;
@@ -1255,6 +1307,41 @@ p {
   .request-button {
     width: 9.58vw;
   }
+
+  .about-container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .about-text {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    width: 70%;
+  }
+
+  .about-heading {
+    font-size: 30pt;
+  }
+
+  .about-subheading {
+    width: 100%;
+    font-size: 18pt;
+  }
+
+  .about-description {
+    width: 100%;
+    font-size: 10pt;
+  }
+
+  .about-img-container {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .about-img {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1603,6 +1690,7 @@ p {
   .navigate-btn {
     width: 30%;
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 
   .navigate-btn p {
@@ -1616,6 +1704,42 @@ p {
     width: 11em;
     height: 3.6em;
     transform: rotate(-9deg);
+  }
+
+  /* --- About section - Vlada --- */
+  .about-container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .about-text {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    width: 70%;
+  }
+
+  .about-heading {
+    font-size: 30pt;
+  }
+
+  .about-subheading {
+    width: 100%;
+    font-size: 18pt;
+  }
+
+  .about-description {
+    width: 100%;
+    font-size: 10pt;
+  }
+
+  .about-img-container {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .about-img {
+    width: 70%;
   }
 
   .spin-popup {
