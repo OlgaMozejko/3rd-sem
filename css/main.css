@@ -860,26 +860,6 @@ p {
   color: var(--main-green);
 }
 
-/* .icon-body1:hover {
-  background-image: url("../img/icons/hover.svg");
-}
-
-.icon-body2:hover {
-  background-image: url("../img/icons/hover.svg");
-} */
-
-/* .icon-active {
-  background-image: url("../img/icons/hover.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  color: var(--main-green);
-}
-
-.icon-notactive {
-  background-image: none;
-} */
-
 .filter-img {
   width: 5vw;
   height: 5vw;
@@ -896,18 +876,6 @@ p {
 .icon-name1 {
   color: var(--green-light);
 }
-
-/* .drinks:hover {
-  stroke: #393331;
-}
-
-.food:hover {
-  fill: #393331;
-} */
-
-/* .icon-name:hover {
-  color: var(--green);
-} */
 
 /*-------- spin the wheel - Marius --------*/
 
