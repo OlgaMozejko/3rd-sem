@@ -820,6 +820,9 @@ p {
 
 .navigate-btn {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--pink-light);
   padding: 5px 40px;
   width: 7%;
@@ -838,9 +841,6 @@ p {
 
 .navigate-btn-bord {
   position: absolute;
-  top: 217.9vh;
-  right: 44.5vw;
-  margin: 0 auto;
   border: 0.2em solid var(--text-color);
   width: 10em;
   height: 3.3em;
@@ -1072,7 +1072,7 @@ p {
   align-items: center;
   z-index: 99999;
   background-image: url("../img/wheel-of-fortune.svg");
-  background-position: 150%;
+  background-position: 110%;
   background-repeat: no-repeat;
   padding-top: 8em;
 }
