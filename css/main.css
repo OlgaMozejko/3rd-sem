@@ -780,6 +780,10 @@ p {
   padding: 0 5px;
 }
 
+.drink-description {
+  display: block;
+}
+
 .menu-price {
   color: var(--text-color);
   font-size: 1vw;
@@ -790,7 +794,7 @@ p {
 
 .drink-text {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   background-color: var(--yellow-light);
   padding: 0.5vw;

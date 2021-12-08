@@ -132,6 +132,7 @@ export default class MenuService {
       <article>
       <div class="drink-text">
         <h2 class="menu-heading">${item.name}</h2>
+        <p class="menu-description">${item.description || ""}</p>
         <p class="menu-price">${item.price}kr</p>
         </div>
       </article>
@@ -149,6 +150,7 @@ export default class MenuService {
       <article>
       <div class="drink-text">
         <h2 class="menu-heading">${item.name}</h2>
+        <p class="menu-description">${item.description || ""}</p>
         <p class="menu-price">${item.price}kr</p>
         </div>
       </article>
@@ -166,6 +168,7 @@ export default class MenuService {
       <article>
       <div class="drink-text">
         <h2 class="menu-heading">${item.name}</h2>
+        <p class="menu-description">${item.description || ""}</p>
         <p class="menu-price">${item.price}kr</p>
         </div>
       </article>
@@ -183,6 +186,7 @@ export default class MenuService {
       <article>
       <div class="drink-text">
         <h2 class="menu-heading">${item.name}</h2>
+        <p class="menu-description">${item.description || ""}</p>
         <p class="menu-price">${item.price}kr</p>
         </div>
       </article>
