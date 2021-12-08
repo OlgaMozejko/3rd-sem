@@ -7,7 +7,7 @@
   --main-blue: #90c0ea;
   --green: #708f39;
   --yellow: #fef481;
-  --pink: #fdd4cc;
+  --pink: #FDEAE5;
   --blue: #b8d7f1;
   --green-light: #b6c69b;
   --yellow-light: #fff9f0;
@@ -879,6 +879,16 @@ p {
 
 /*-------- spin the wheel - Marius --------*/
 
+#ad-banner {
+  display: block;
+  width: 600px;
+  height: 255px;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  z-index: 99999;
+}
+
 .spin-popup {
   display: block;
   position: fixed;
@@ -1512,6 +1522,7 @@ p {
     width: 10vw;
     height: 10vw;
   }
+
   .icons-filter button {
     padding: 10px;
     margin: 0;
