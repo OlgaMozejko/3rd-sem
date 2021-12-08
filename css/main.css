@@ -889,6 +889,23 @@ p {
   text-align: center;
   align-items: center;
   z-index: 99999;
+  background-image: url("../img/wheel-of-fortune.svg");
+  background-position: right;
+}
+
+.ad-banner-title {
+  font-size: 32px;
+  font-family: montserrat,
+    sans-serif;
+  font-weight: 500;
+}
+
+.ad-banner-title {
+  font-size: 24px;
+  font-family: montserrat,
+    sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .spin-popup {
