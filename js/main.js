@@ -109,7 +109,6 @@ window.addEventListener("scroll", function () {
   } else {
     cover.classList.remove("cover-close");
   }
-<<<<<<< Updated upstream
 });
 
 // photos
@@ -122,6 +121,3 @@ window.addEventListener("load resize scroll", function () {
     this.find(".move-pic").css({ left: leftPosition });
   });
 });
-=======
-});
->>>>>>> Stashed changes
