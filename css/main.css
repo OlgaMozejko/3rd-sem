@@ -99,6 +99,18 @@ p {
   margin-bottom: 5.4em;
 }
 
+.small-logo {
+  width: 4em;
+  position: fixed;
+  z-index: 90;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.small-logo-animate {
+  animation: rotating 16s infinite linear;
+}
+
 .navbtn {
   position: fixed;
   z-index: 101;
@@ -289,12 +301,22 @@ p {
 
 .flowers-img {
   position: absolute;
-  width: 15em;
+  width: 18em;
+  transition: 1s ease;
+}
+
+.flowers-img-small {
+  width: 10em!important;
 }
 
 .flowers-img2 {
   position: absolute;
   width: 6em;
+  transition: 1s ease;
+}
+
+.flowers-img-small2 {
+  width: 3em!important;
 }
 
 .flowers {
@@ -321,13 +343,13 @@ p {
 
 .leaf3 {
   transform: rotate(-135deg);
-  top: -28%;
+  top: -24%;
   left: 65%;
 }
 
 .leaf4 {
   transform: rotate(230deg);
-  top: -3%;
+  top: 5%;
   right: 0%;
 }
 
@@ -339,20 +361,20 @@ p {
 
 .leaf6 {
   transform: rotate(-20deg);
-  bottom: -20%;
+  bottom: -18%;
   right: 12%;
 }
 
 .leaf7 {
   transform: rotate(30deg);
-  bottom: -20%;
+  bottom: -13%;
   left: 15%;
 }
 
 .leaf8 {
   transform: rotate(20deg);
   left: -7%;
-  bottom: -15%;
+  bottom: -14%;
 }
 
 .leaf9 {
@@ -378,6 +400,8 @@ p {
   width: 100%;
   padding: 40px;
   margin: auto;
+  margin-top: 4em;
+  height: 13em;
 }
 
 .move-pic {
@@ -387,15 +411,90 @@ p {
   right: auto;
   width: 100%;
   min-height: 75vh;
-  background-image: url(../img/cafe3.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 2em;
+}
+
+.static-box2 {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  margin: auto;
+  margin-top: 4em;
+  height: 13em;
+}
+
+.move-pic2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  min-height: 75vh;
+}
+
+.static-box3 {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  margin: auto;
+  margin-top: 4em;
+  height: 13em;
+}
+
+.move-pic3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  min-height: 75vh;
+}
+
+.static-box4 {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  margin: auto;
+  margin-top: 4em;
+  height: 13em;
+}
+
+.move-pic4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  min-height: 75vh;
+}
+
+.static-box5 {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  margin: auto;
+  margin-top: 4em;
+  height: 13em;
+}
+
+.move-pic5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  min-height: 75vh;
+}
+
+.cafe-pic2 {
+  width: 40em;
+  border-radius: 1em;
+  margin-left: 35%;
 }
 
 .cafe-pic {
-  display: none;
+  width: 40em;
+  border-radius: 1em;
+  margin-left: 35%;
 }
 
 /*-------- booking - Marius --------*/
@@ -975,6 +1074,7 @@ p {
   background-image: url("../img/wheel-of-fortune.svg");
   background-position: 150%;
   background-repeat: no-repeat;
+  padding-top: 8em;
 }
 
 .ad-banner-title {
@@ -1089,6 +1189,94 @@ p {
   }
 }
 
+/*--------footer - Olga --------*/
+
+footer {
+  background-color: var(--background);
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 1em;
+  margin-top: 25em;
+}
+
+.bottom-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  top: -9em;
+  background-color: var(--green-light);
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+.bottom-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.mini-logo {
+  width: 2em;
+  margin-bottom: -0.5em;
+}
+
+.bottom-text {
+  text-align: center;
+  font-size: 10pt!important;
+}
+
+.foot-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  width: 100%;
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-top: -10em;
+}
+
+.map-box {
+  width: 400px;
+  height: 300px;
+  z-index: 3;
+  border-radius: 1em;
+}
+
+.foot-innerflex h1 {
+  margin-left: -0.3em;
+}
+
+.foot-innerflex {
+  margin-left: 5em;
+  margin-right: 5em;
+  width: 30em;
+}
+
+.flower-bottom {
+  position: relative;
+  width: 500px;
+  height: 430px;
+  background-image: url(../img/flowerone.png);
+  background-position: top;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  margin-bottom: -8em;
+}
+
+.some-icon {
+  width: 2em;
+  margin-right: 1em;
+}
+ 
+
 @media only screen and (max-width: 1200px) {
   /*---------nav - Olga --------*/
 
@@ -1130,11 +1318,11 @@ p {
   }
 
   .leaf2 {
-    top: -15%;
+    top: -10%;
   }
 
   .leaf3 {
-    top: -20%;
+    top: -10%;
   }
 
   .leaf4 {
@@ -1150,12 +1338,28 @@ p {
   }
 
   .leaf7 {
-    bottom: -12%;
+    bottom: -8%;
   }
 
   .leaf8 {
-    bottom: -8%;
-    left: -6%;
+    bottom: -2%;
+  }
+
+  .flowers-img-small {
+    width: 6em!important;
+  }
+
+  /*-----footer - Olga ----*/
+
+
+ .bottom-logo {
+    width: 12em;
+    top: -7em
+  }
+
+  .foot-flex {
+    margin-left: 3em;
+    margin-right: 3em;
   }
 
   /*-------- booking - Marius --------*/
@@ -1386,6 +1590,12 @@ p {
     font-size: 1em;
   }
 
+  .small-logo {
+    width: 3em;
+    margin-top: 1.3em;
+    margin-left: 1.2em;
+  }
+
   /*---------front Olga ---------*/
 
   .sun img {
@@ -1408,43 +1618,44 @@ p {
   }
 
   .leaf1 {
-    top: -10%;
+    top: -5%;
   }
 
   .leaf2 {
-    top: -15%;
+    top: -8%;
   }
 
   .leaf3 {
-    top: -20%;
+    top: -10%;
   }
 
   .leaf4 {
     top: 2%;
-    right: -8%;
+    right: -4%;
   }
 
   .leaf5 {
-    bottom: 10%;
-    right: -10%;
+    bottom: 15%;
+    right: -2%;
   }
 
   .leaf6 {
-    bottom: -10%;
-    right: 4%;
+    bottom: -5%;
+    right: 7%;
   }
 
   .leaf7 {
-    bottom: -12%;
+    bottom: -4%;
+    left: 0%;
   }
 
   .leaf8 {
     bottom: 10%;
-    left: -6%;
+    left: -10%;
   }
 
   .leaf9 {
-    top: 8%;
+    top: 20%;
   }
 
   .leaf10 {
@@ -1456,6 +1667,69 @@ p {
     right: 10%;
     top: 35%;
   }
+
+  .flowers-img-small {
+    width: 4.5em!important;
+  }
+
+  .flowers-img-small2 {
+    width: 1.5em!important;
+  }
+
+  /*----photos-Olga-----*/
+
+  .cafe-pic, .cafe-pic2 {
+    width: 20em;
+    margin-left: 0%;
+  }
+
+  .cafe-pic {
+    margin-left: -20em;
+  }
+
+  .cafe-pic2 {
+    margin-left: 20em;
+  }
+
+  .static-box, .static-box2, .static-box3,
+  .static-box4, .static-box5 {
+    height: 3em;
+  }
+
+
+  /*---- footer Olga ------*/
+
+  footer {
+    margin-top: 16em;
+  }
+
+  .bottom-logo {
+    width: 10em;
+    top: -6.5em;
+  }
+
+  .foot-flex {
+    flex-direction: column;
+    margin-top: -4em;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .foot-innerflex {
+    width: 80%;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .flower-bottom {
+    display: none;
+  }
+
+  .map-box {
+    width: 250px;
+  }
+
 
   /*-----------Marius --------------*/
 

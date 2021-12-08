@@ -9,6 +9,7 @@
   <meta name="author" content="" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="https://use.typekit.net/nvm8xrk.css" />
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body onhashchange="pageChange()">
@@ -22,6 +23,10 @@
         <p>Book<br>table</p>
       </div>
       <div class="bookbtn-bord"></div>
+    </a>
+
+    <a href="">
+      <img src="img/sunnaked-01.png" class="small-logo" alt="logo">
     </a>
 
     <div id="navi" class="overlay">
@@ -54,7 +59,7 @@
     </div>
 
     <div class="flowers">
-      <img src="img/leaf5.png" id="flowers" alt="leaf" class="flowers-img flowers-img3 leaf1">
+      <img src="img/leaf5.png" alt="leaf" class="flowers-img flowers-img3 leaf1">
       <img src="img/flowerone.png" alt="leaf" class="flowers-img leaf2">
       <img src="img/leaf5.png" alt="leaf" class="flowers-img leaf3">
       <img src="img/leaf4.png" alt="leaf" class="flowers-img leaf4">
@@ -94,17 +99,21 @@
       </section>
 
       <section id="home-pictures">
-        <div class="static-box2">
-        <img src="img/cafe1.png" alt="photo of the cafe" class="cafe-pic"></div>
-        <div class="static-box2">
-        <img src="img/cafe2.png" alt="photo of the cafe" class="cafe-pic"></div>
-        <div class="static-box">
-          <div class="move-pic">
-          </div></div>
-        <div class="static-box2">
-        <img src="img/cafe4.png" alt="photo of the cafe" class="cafe-pic"></div>
-        <div class="static-box2">
-        <img src="img/cafe5.png" alt="photo of the cafe" class="cafe-pic"></div>
+        
+          <div class="static-box"><div class="move-pic">
+            <img src="img/cafe1.png" alt="photo of the cafe" class="cafe-pic"></div></div>
+        
+          <div class="static-box2"><div class="move-pic2">
+            <img src="img/cafe2.png" alt="photo of the cafe" class="cafe-pic2"></div></div>
+        
+          <div class="static-box3"><div class="move-pic3">
+            <img src="img/cafe3.png" alt="photo of the cafe" class="cafe-pic"></div></div>
+       
+          <div class="static-box4"><div class="move-pic4">
+            <img src="img/cafe4.png" alt="photo of the cafe" class="cafe-pic2"></div></div>
+        
+          <div class="static-box5"><div class="move-pic5">
+            <img src="img/cafe5.png" alt="photo of the cafe" class="cafe-pic"></div></div>
 
 
       </section>
@@ -133,12 +142,62 @@
     <div id="cocktails-list" class="menu-list"></div>
   </section>
 
-  <!-- <section id="footer-home">
-    <h1>Footer</h1>
-  </section> -->
+<footer>
+
+<img src="img/logo-foot.png" class="bottom-logo" alt="logo">
+
+<div class="foot-flex">
+
+<div class="foot-innerflex">
+
+  <h1>Visit Us!</h1>
+
+  <p>Den Gule Café, <br>
+    Jægergårdsgade 2A <br>
+    8000 Aarhus</p><br>
+  <p>Monday: closed <br>
+    Tuesday - Saturday: 10.00-18.00 <br>
+    Sunday: 10.00 - 15.00<br></p><br>
+
+  <div class="map-box" id="map">
+  </div>
+
+</div>
+
+<div class="foot-innerflex">
+
+  <h1>Contact Us!</h1> <br>
+
+  <p>+45 9999999 <br>
+    dengulecafe@gmail.com</p> <br>
+
+  <div>
+
+    <a href=""><img src="img/ig.png" class="some-icon" alt="instagram icon"></a>
+
+    <a href=""><img src="img/fb.png" class="some-icon" alt="instagram icon"></a>
+
+    <a href=""><img src="img/Smiley.png" class="some-icon" alt="instagram icon"></a>
+
+  </div><br><br><br>
+
+  <div class="flower-bottom"></div>
+
+</div>
+
+</div>
+ <div class="bottom-flex">
+   <img src="img/icon-foot.png" alt="mini logo" class="mini-logo">
+   <p class="bottom-text">©2021 DEN GULE CAFÉ<br>MADE WITH LOVE</p>
+ </div>
+
+</footer>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- mapbox -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <script src="js/map-box.js"></script>
   <!-- main js file -->
   <script src="js/main.js" type="module"></script>
 </body>

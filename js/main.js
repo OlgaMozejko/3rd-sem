@@ -104,20 +104,64 @@ window.topFunction = function () {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
 
+
 var scrollPosition = window.scrollY;
 var cover = document.getElementsByClassName("cover")[0];
+var logo = document.getElementsByClassName("small-logo")[0];
+var leaf1 = document.getElementsByClassName("leaf1")[0];
+var leaf2 = document.getElementsByClassName("leaf2")[0];
+var leaf3 = document.getElementsByClassName("leaf3")[0];
+var leaf4 = document.getElementsByClassName("leaf4")[0];
+var leaf5 = document.getElementsByClassName("leaf5")[0];
+var leaf6 = document.getElementsByClassName("leaf6")[0];
+var leaf7 = document.getElementsByClassName("leaf7")[0];
+var leaf8 = document.getElementsByClassName("leaf8")[0];
+var leaf9 = document.getElementsByClassName("leaf9")[0];
+var flower1 = document.getElementsByClassName("leaf10")[0];
+var flower2 = document.getElementsByClassName("leaf11")[0];
 
 window.addEventListener("scroll", function () {
   scrollPosition = window.scrollY;
 
   if (scrollPosition >= 1) {
     cover.classList.add("cover-close");
+    leaf1.classList.add("flowers-img-small");
+    leaf2.classList.add("flowers-img-small");
+    leaf3.classList.add("flowers-img-small");
+    leaf4.classList.add("flowers-img-small");
+    leaf5.classList.add("flowers-img-small");
+    leaf6.classList.add("flowers-img-small");
+    leaf7.classList.add("flowers-img-small");
+    leaf8.classList.add("flowers-img-small");
+    leaf9.classList.add("flowers-img-small");
+    flower1.classList.add("flowers-img-small2");
+    flower2.classList.add("flowers-img-small2");
+    logo.classList.add("small-logo-animate");
   } else {
     cover.classList.remove("cover-close");
+    leaf1.classList.remove("flowers-img-small");
+    leaf2.classList.remove("flowers-img-small");
+    leaf3.classList.remove("flowers-img-small");
+    leaf4.classList.remove("flowers-img-small");
+    leaf5.classList.remove("flowers-img-small");
+    leaf6.classList.remove("flowers-img-small");
+    leaf7.classList.remove("flowers-img-small");
+    leaf8.classList.remove("flowers-img-small");
+    leaf9.classList.remove("flowers-img-small");
+    flower1.classList.remove("flowers-img-small2");
+    flower2.classList.remove("flowers-img-small2");
+    logo.classList.remove("small-logo-animate");
   }
 });
 
+
+
+
+
+
 // photos
+//scrolling toturial by WebMadeWell
+//found on https://codepen.io/webmadewell/pen/bKyemQ
 
 $(window).on("load resize scroll", function() {
   $(".static-box").each(function() {
@@ -126,6 +170,50 @@ $(window).on("load resize scroll", function() {
     var leftPosition = windowTop - elementTop;
       $(this)
         .find(".move-pic")
+        .css({ right: leftPosition });
+  });
+});
+
+$(window).on("load resize scroll", function() {
+  $(".static-box2").each(function() {
+    var windowTop = $(window).scrollTop();
+    var elementTop = $(this).offset().top;
+    var leftPosition = windowTop - elementTop;
+      $(this)
+        .find(".move-pic2")
         .css({ left: leftPosition });
+  });
+});
+
+$(window).on("load resize scroll", function() {
+  $(".static-box3").each(function() {
+    var windowTop = $(window).scrollTop();
+    var elementTop = $(this).offset().top;
+    var leftPosition = windowTop - elementTop;
+      $(this)
+        .find(".move-pic3")
+        .css({ right: leftPosition });
+  });
+});
+
+$(window).on("load resize scroll", function() {
+  $(".static-box4").each(function() {
+    var windowTop = $(window).scrollTop();
+    var elementTop = $(this).offset().top;
+    var leftPosition = windowTop - elementTop;
+      $(this)
+        .find(".move-pic4")
+        .css({ left: leftPosition });
+  });
+});
+
+$(window).on("load resize scroll", function() {
+  $(".static-box5").each(function() {
+    var windowTop = $(window).scrollTop();
+    var elementTop = $(this).offset().top;
+    var leftPosition = windowTop - elementTop;
+      $(this)
+        .find(".move-pic5")
+        .css({ right: leftPosition });
   });
 });
