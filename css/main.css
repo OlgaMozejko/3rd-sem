@@ -868,7 +868,7 @@ p {
   background-image: url("../img/icons/hover.svg");
 } */
 
-.icon-active {
+/* .icon-active {
   background-image: url("../img/icons/hover.svg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -878,7 +878,7 @@ p {
 
 .icon-notactive {
   background-image: none;
-}
+} */
 
 .filter-img {
   width: 5vw;

@@ -263,18 +263,6 @@ export default class MenuService {
       .addEventListener("mouseout", function () {
         document.querySelector(".icon-body2").style.backgroundImage = "none";
       });
-
-    document
-      .querySelector(".icon-body2")
-      .addEventListener("mouseover", function () {
-        document.querySelector(".icon-name1").style.color = "#393331";
-      });
-
-    document
-      .querySelector(".icon-body2")
-      .addEventListener("mouseout", function () {
-        document.querySelector(".icon-name1").style.color = "#b6c69b";
-      });
   }
 
   // function for changing style when viewing food menu
@@ -294,6 +282,8 @@ export default class MenuService {
     document.querySelector(".icon-body1").style.backgroundImage =
       "url('../img/icons/hover.svg')";
     document.querySelector(".icon-body2").style.backgroundImage = "none";
+    document.querySelector(".icon-name").style.color = "#393331";
+    document.querySelector(".icon-name1").style.color = "#B5C499";
 
     document
       .querySelector(".icon-body1")
@@ -336,6 +326,8 @@ export default class MenuService {
     document.querySelector(".icon-body2").classList.add(".icon-active");
     document.querySelector(".food").style.fill = "#B5C499";
     document.querySelector(".drinks").style.stroke = "#393331";
+    document.querySelector(".icon-name").style.color = "#B5C499";
+    document.querySelector(".icon-name1").style.color = "#393331";
 
     document
       .querySelector(".icon-body1")
