@@ -169,7 +169,7 @@ p {
 }
 
 .container {
-  height: 100rem;
+  height: 1000rem;
   position: relative;
   z-index: 1;
 }
@@ -369,6 +369,33 @@ p {
 .leaf11 {
   right: 22%;
   top: 15%;
+}
+
+/*---------photos - Olga --------*/
+
+.static-box {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  margin: auto;
+}
+
+.move-pic {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  min-height: 75vh;
+  background-image: url(../img/cafe3.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2em;
+}
+
+.cafe-pic {
+  display: none;
 }
 
 /*-------- booking - Marius --------*/

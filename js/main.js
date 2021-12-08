@@ -102,4 +102,16 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// photos
+
+window.addEventListener("load resize scroll", function() {
+  document.getElementByClassName("static-box").each(function() {
+    let windowTop = window.scrollTop();
+    let elementTop = this.offset().top;
+    let leftPosition = windowTop - elementTop;
+      this
+        .find(".move-pic")
+        .css({ left: leftPosition });
+  });
+});
 
