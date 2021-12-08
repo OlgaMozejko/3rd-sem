@@ -98,6 +98,12 @@ window.close = function () {
 
 // scroll
 
+// When the user clicks on the button, scroll to the top of the document
+window.topFunction = function () {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
+
 var scrollPosition = window.scrollY;
 var cover = document.getElementsByClassName("cover")[0];
 
