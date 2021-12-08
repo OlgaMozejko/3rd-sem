@@ -969,6 +969,7 @@ p {
   z-index: 99999;
   background-image: url("../img/wheel-of-fortune.svg");
   background-position: right;
+  background-repeat: no-repeat;
   margin-top: 20px;
 }
 
@@ -980,12 +981,13 @@ p {
   text-decoration: none;
 }
 
-.ad-banner-untitle {
+.ad-banner-subtitle {
   font-size: 24px;
   font-family: montserrat,
     sans-serif;
   font-weight: 700;
   text-decoration: underline;
+  color: #C27060;
 }
 
 .spin-popup {
@@ -1155,6 +1157,7 @@ p {
   }
 
   /*-------- booking - Marius --------*/
+
 
   .booking-popup {
     width: 33vw;
@@ -1343,6 +1346,18 @@ p {
 
   .about-img {
     width: 50%;
+  }
+
+  #ad-banner {
+    margin-top: 1.3vw;
+  }
+
+  .ad-banner-title {
+    font-size: 3vw;
+  }
+
+  .ad-banner-subtitle {
+    font-size: 1.6vw;
   }
 }
 
@@ -1742,6 +1757,20 @@ p {
 
   .about-img {
     width: 70%;
+  }
+
+  /* wheel - Marius */
+
+  #ad-banner {
+    margin-top: 20px;
+  }
+
+  .ad-banner-title {
+    font-size: 24px
+  }
+
+  .ad-banner-subtitle {
+    font-size: 16px;
   }
 
   .spin-popup {
