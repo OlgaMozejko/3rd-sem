@@ -169,7 +169,7 @@ p {
 }
 
 .container {
-  height: 1000rem;
+  height: 100%;
   position: relative;
   z-index: 1;
 }
