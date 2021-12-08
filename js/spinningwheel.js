@@ -95,6 +95,10 @@ export default class SpinTheWheel {
     const spinWindow = document.querySelector(".spin-popup");
     spinWindow.style.display = "none";
   }
+  _openSpin() {
+    const spinWindow = document.querySelector(".spin-popup");
+    spinWindow.style.display = "block";
+  }
 
   // spin the wheel code from https://github.com/weibenfalk/vanilla-js-wheel-of-fortune  and adapted to our project
 

@@ -210,4 +210,10 @@ export default class BookingService {
     bookingWindow.style.display = "none";
   }
 
+  _openBooking() {
+    const bookingWindow = document.querySelector(".booking-popup");
+    const bookingSuccess = document.querySelector(".success");
+    bookingWindow.style.display = "block";
+  }
+
 }

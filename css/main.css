@@ -958,7 +958,7 @@ p {
 /*-------- spin the wheel - Marius --------*/
 
 #ad-banner {
-  width: 600px;
+  width: 100%;
   height: 255px;
   background-color: var(--pink);
   display: flex;
@@ -969,6 +969,7 @@ p {
   z-index: 99999;
   background-image: url("../img/wheel-of-fortune.svg");
   background-position: right;
+  margin-top: 20px;
 }
 
 .ad-banner-title {
@@ -976,6 +977,7 @@ p {
   font-family: montserrat,
     sans-serif;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .ad-banner-title {

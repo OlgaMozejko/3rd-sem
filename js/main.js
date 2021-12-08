@@ -26,8 +26,15 @@ window.nextBooking = function (value) {
   _bookingService._nextBooking(value);
 };
 
+window.openBooking = function (value) {
+  _bookingService._openBooking(value);
+};
+
 window.closeSpin = function () {
   _spinTheWheel._closeSpin();
+};
+window.openSpin = function () {
+  _spinTheWheel._openSpin();
 };
 
 window.pageChange = function () {
@@ -102,6 +109,7 @@ window.addEventListener("scroll", function () {
   } else {
     cover.classList.remove("cover-close");
   }
+<<<<<<< Updated upstream
 });
 
 // photos
@@ -114,3 +122,6 @@ window.addEventListener("load resize scroll", function () {
     this.find(".move-pic").css({ left: leftPosition });
   });
 });
+=======
+});
+>>>>>>> Stashed changes
