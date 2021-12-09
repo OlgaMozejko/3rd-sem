@@ -101,7 +101,7 @@ p {
 }
 
 .small-logo {
-  width: 4em;
+  width: 3em;
   position: fixed;
   z-index: 90;
   margin-top: 2em;
@@ -1064,7 +1064,7 @@ p {
 /*-------- spin the wheel - Marius --------*/
 
 .ad-banner-menu {
-  margin-top: 100px;
+  
 }
 
 #ad-banner {
