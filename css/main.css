@@ -192,6 +192,19 @@ nav a {
 
 /*------main - front - Olga -----*/
 
+
+
+.arrow {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 0;
+  margin-bottom: 10em;
+}
+
 .sun {
   display: flex;
   align-items: center;
@@ -757,7 +770,7 @@ nav a {
   grid-template-columns: repeat(2, 300px);
   grid-template-rows: repeat(2, 400px);
   grid-column-gap: 40px;
-  grid-row-gap: 0px;
+  grid-row-gap: 50px;
   justify-content: center;
   margin: 0;
 }
@@ -773,6 +786,7 @@ nav a {
 .navigate-btn {
   cursor: pointer;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   background-color: var(--pink-light);
@@ -781,6 +795,7 @@ nav a {
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 220px;
+  z-index: 50;
 }
 
 .navigate-btn p {
@@ -1027,10 +1042,14 @@ nav a {
   background-image: url("../img/wheel-of-fortune.png");
   background-size: 550px;
   background-position-y: 50%;
-  background-position: 130%;
+  background-position: 110%;
   background-repeat: no-repeat;
   padding-top: 8em;
   z-index: 10;
+}
+
+.ad-banner-menu {
+  padding-top: 2em!important;
 }
 
 .ad-banner-title {
@@ -1062,6 +1081,7 @@ nav a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 90;
 }
 
 .spin-flexbox {
@@ -1199,12 +1219,14 @@ footer {
   margin-left: 6em;
   margin-right: 6em;
   margin-top: -10em;
+  position: relative;
+  z-index: 50;
 }
 
 .map-box {
   width: 400px;
   height: 300px;
-  z-index: 3;
+  z-index: 80;
   border-radius: 1em;
 }
 
@@ -1236,6 +1258,8 @@ footer {
 .some-icon {
   width: 2em;
   margin-right: 1em;
+  position: relative;
+  z-index: 80;
 }
 
 
@@ -1481,7 +1505,7 @@ footer {
 
   .about-container {
     flex-direction: column;
-    margin-top: 0;
+    margin-bottom: 12em;
   }
 
   .about-text {
@@ -1517,11 +1541,16 @@ footer {
 
   .ad-banner-title {
     font-size: 3vw;
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
   .ad-banner-subtitle {
     font-size: 1.6vw;
   }
+
+
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -1674,6 +1703,7 @@ footer {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
+    text-align: center;
   }
 
   .foot-innerflex {
@@ -1688,6 +1718,8 @@ footer {
 
   .map-box {
     width: 250px;
+    justify-self: center;
+    margin: 0 auto;
   }
 
   /*-----------Marius --------------*/
@@ -1952,12 +1984,7 @@ footer {
   }
 
   .navigate-btn-bord {
-    position: absolute;
-    top: 94.3%;
-    right: 26%;
-    width: 11em;
-    height: 3.6em;
-    transform: rotate(-9deg);
+    width: 14em;
   }
 
   /* --- About section - Vlada --- */
@@ -1965,6 +1992,7 @@ footer {
     flex-direction: column;
     margin-top: 0;
     height: inherit;
+    margin-bottom: 0;
   }
 
   .about-text {
