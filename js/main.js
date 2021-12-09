@@ -1,5 +1,14 @@
 "use strict";
 
+//loader
+
+window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+
+
+
+
 import SpaService from "./spa-service.js";
 import MenuService from "./menu-service.js";
 import BookingService from "./booking.js";
@@ -239,3 +248,7 @@ $(window).on("load resize scroll", function() {
         .css({ left: leftPosition });
   });
 });
+
+
+
+

@@ -65,6 +65,39 @@ p {
   padding: 0;
 }
 
+/*----------loader----------*/
+
+.loader {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  z-index:1000;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.loading {
+  width: 6em;
+  height: 6em;
+  background-image: url(../img/sunnaked-01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: rotating 10s linear infinite;
+}
+
+.loaded .loader {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s 1s ease-out;
+}
+
 /*--------- nav - Olga ----------*/
 
 nav a {
@@ -1580,6 +1613,10 @@ footer {
     width: 3em;
     margin-top: 1.3em;
     margin-left: 1.2em;
+  }
+
+  .arrow {
+    margin-bottom: 6em;
   }
 
   /*---------front Olga ---------*/
