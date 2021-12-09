@@ -217,3 +217,25 @@ $(window).on("load resize scroll", function() {
         .css({ right: leftPosition });
   });
 });
+
+$(window).on("load resize scroll", function() {
+  $(".static-box6").each(function() {
+    var windowTop = $(window).scrollTop();
+    var elementTop = $(this).offset().top;
+    var leftPosition = windowTop - elementTop;
+      $(this)
+        .find(".move-pic6")
+        .css({ right: leftPosition });
+  });
+});
+
+$(window).on("load resize scroll", function() {
+  $(".static-box7").each(function() {
+    var windowTop = $(window).scrollTop();
+    var elementTop = $(this).offset().top;
+    var leftPosition = windowTop - elementTop;
+      $(this)
+        .find(".move-pic7")
+        .css({ left: leftPosition });
+  });
+});
