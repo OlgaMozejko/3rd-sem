@@ -1078,7 +1078,9 @@ p {
   align-items: center;
   z-index: 99999;
   background-image: url("../img/wheel-of-fortune.png");
-  background-position: 145%;
+  background-size: 550px;
+  background-position-y: 50%;
+  background-position: 130%;
   background-repeat: no-repeat;
 }
 
@@ -1280,7 +1282,6 @@ footer {
   width: 2em;
   margin-right: 1em;
 }
-
 
 @media only screen and (max-width: 1200px) {
   /*---------nav - Olga --------*/
@@ -1556,10 +1557,6 @@ footer {
 
   .about-img {
     width: 50%;
-  }
-
-  #ad-banner {
-    margin-top: 1.3vw;
   }
 
   .ad-banner-title {
@@ -2050,7 +2047,7 @@ footer {
   #ad-banner {
     margin-top: 0;
     height: 180px;
-    background-position: -50%;
+    background-position: -70%;
   }
 
   .ad-banner-title {
