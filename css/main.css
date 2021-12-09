@@ -1063,6 +1063,10 @@ p {
 
 /*-------- spin the wheel - Marius --------*/
 
+.ad-banner-menu {
+  margin-top: 100px;
+}
+
 #ad-banner {
   width: 100%;
   height: 220px;
@@ -1074,13 +1078,12 @@ p {
   align-items: center;
   z-index: 99999;
   background-image: url("../img/wheel-of-fortune.svg");
-  background-position: 110%;
+  background-position: 145%;
   background-repeat: no-repeat;
-  padding-top: 8em;
 }
 
 .ad-banner-title {
-  font-size: 16pt;
+  font-size: 14pt;
   font-family: montserrat, sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -1353,10 +1356,9 @@ footer {
 
   /*-----footer - Olga ----*/
 
-
   .bottom-logo {
     width: 12em;
-    top: -7em
+    top: -7em;
   }
 
   .foot-flex {
@@ -1702,7 +1704,6 @@ footer {
     height: 3em;
   }
 
-
   /*---- footer Olga ------*/
 
   footer {
@@ -1735,7 +1736,6 @@ footer {
   .map-box {
     width: 250px;
   }
-
 
   /*-----------Marius --------------*/
 
