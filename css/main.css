@@ -9,7 +9,7 @@
   --yellow: #fef481;
   --pink: #fdeae5;
   --blue: #b8d7f1;
-  --green-light: #b6c69b;
+  --green-light: #B5C499;
   --yellow-light: #fff9f0;
   --pink-light: #fdeae5;
   --blue-light: #c5def3;
@@ -72,12 +72,13 @@ p {
   z-index: 101;
   bottom: 0;
   right: 0;
-  margin-right: 2.5em;
-  margin-bottom: 2.5em;
+  margin-right: 2.4em;
+  margin-bottom: 2.4em;
   cursor: pointer;
-  background-color: var(--pink-light);
+  background-color: var(--green-light);
   padding: 0.2em 1.4em;
   border-radius: 50%;
+  color: #FFFFFF;
 }
 
 .bookbtn p {
