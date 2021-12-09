@@ -1077,7 +1077,7 @@ p {
   text-align: center;
   align-items: center;
   z-index: 99999;
-  background-image: url("../img/wheel-of-fortune.svg");
+  background-image: url("../img/wheel-of-fortune.png");
   background-position: 145%;
   background-repeat: no-repeat;
 }
