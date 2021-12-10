@@ -2,12 +2,9 @@
 
 //loader
 
-window.addEventListener('load',function(){
-  document.querySelector('body').classList.add("loaded")  
+window.addEventListener("load", function () {
+  document.querySelector("body").classList.add("loaded");
 });
-
-
-
 
 import SpaService from "./spa-service.js";
 import MenuService from "./menu-service.js";
@@ -113,7 +110,6 @@ window.topFunction = function () {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
 
-
 var scrollPosition = window.scrollY;
 var cover = document.getElementsByClassName("cover")[0];
 var logo = document.getElementsByClassName("small-logo")[0];
@@ -163,92 +159,69 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
-
-
-
 // photos
 //scrolling toturial by WebMadeWell
 //found on https://codepen.io/webmadewell/pen/bKyemQ
 
-$(window).on("load resize scroll", function() {
-  $(".static-box").each(function() {
+$(window).on("load resize scroll", function () {
+  $(".static-box").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
     var leftPosition = windowTop - elementTop;
-      $(this)
-        .find(".move-pic")
-        .css({ right: leftPosition });
+    $(this).find(".move-pic").css({ right: leftPosition });
   });
 });
 
-$(window).on("load resize scroll", function() {
-  $(".static-box2").each(function() {
+$(window).on("load resize scroll", function () {
+  $(".static-box2").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
     var leftPosition = windowTop - elementTop;
-      $(this)
-        .find(".move-pic2")
-        .css({ left: leftPosition });
+    $(this).find(".move-pic2").css({ left: leftPosition });
   });
 });
 
-$(window).on("load resize scroll", function() {
-  $(".static-box3").each(function() {
+$(window).on("load resize scroll", function () {
+  $(".static-box3").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
     var leftPosition = windowTop - elementTop;
-      $(this)
-        .find(".move-pic3")
-        .css({ right: leftPosition });
+    $(this).find(".move-pic3").css({ right: leftPosition });
   });
 });
 
-$(window).on("load resize scroll", function() {
-  $(".static-box4").each(function() {
+$(window).on("load resize scroll", function () {
+  $(".static-box4").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
     var leftPosition = windowTop - elementTop;
-      $(this)
-        .find(".move-pic4")
-        .css({ left: leftPosition });
+    $(this).find(".move-pic4").css({ left: leftPosition });
   });
 });
 
-$(window).on("load resize scroll", function() {
-  $(".static-box5").each(function() {
+$(window).on("load resize scroll", function () {
+  $(".static-box5").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
     var leftPosition = windowTop - elementTop;
-      $(this)
-        .find(".move-pic5")
-        .css({ right: leftPosition });
+    $(this).find(".move-pic5").css({ right: leftPosition });
   });
 });
 
-$(window).on("load resize scroll", function() {
-  $(".static-box6").each(function() {
+$(window).on("load resize scroll", function () {
+  $(".static-box6").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
     var leftPosition = windowTop - elementTop;
-      $(this)
-        .find(".move-pic6")
-        .css({ right: leftPosition });
+    $(this).find(".move-pic6").css({ right: leftPosition });
   });
 });
 
-$(window).on("load resize scroll", function() {
-  $(".static-box7").each(function() {
+$(window).on("load resize scroll", function () {
+  $(".static-box7").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
     var leftPosition = windowTop - elementTop;
-      $(this)
-        .find(".move-pic7")
-        .css({ left: leftPosition });
+    $(this).find(".move-pic7").css({ left: leftPosition });
   });
 });
-
-
-
-

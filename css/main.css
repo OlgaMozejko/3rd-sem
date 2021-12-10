@@ -9,7 +9,7 @@
   --yellow: #fef481;
   --pink: #fdeae5;
   --blue: #b8d7f1;
-  --green-light: #B5C499;
+  --green-light: #b5c499;
   --yellow-light: #fff9f0;
   --pink-light: #fdeae5;
   --blue-light: #c5def3;
@@ -68,12 +68,12 @@ p {
 /*----------loader----------*/
 
 .loader {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100vw;
-  height:100vh;
-  z-index:1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
   background-color: var(--background);
   display: flex;
   justify-content: center;
@@ -95,7 +95,7 @@ p {
 .loaded .loader {
   opacity: 0;
   visibility: hidden;
-  transition: all .3s 1s ease-out;
+  transition: all 0.3s 1s ease-out;
 }
 
 /*--------- nav - Olga ----------*/
@@ -114,7 +114,7 @@ nav a {
   background-color: var(--green-light);
   padding: 0.2em 1.4em;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .bookbtn p {
@@ -224,8 +224,6 @@ nav a {
 }
 
 /*------main - front - Olga -----*/
-
-
 
 .arrow {
   width: 100vw;
@@ -445,9 +443,13 @@ nav a {
 
 /*---------photos - Olga --------*/
 
-.static-box, .static-box2, .static-box3,
-.static-box4, .static-box5, .static-box6,
- .static-box7 {
+.static-box,
+.static-box2,
+.static-box3,
+.static-box4,
+.static-box5,
+.static-box6,
+.static-box7 {
   position: relative;
   width: 100%;
   padding: 40px;
@@ -456,8 +458,12 @@ nav a {
   height: 13em;
 }
 
-.move-pic, .move-pic2, .move-pic3,
-.move-pic4, .move-pic5, .move-pic6, 
+.move-pic,
+.move-pic2,
+.move-pic3,
+.move-pic4,
+.move-pic5,
+.move-pic6,
 .move-pic7 {
   position: absolute;
   top: 0;
@@ -492,7 +498,6 @@ nav a {
 }
 
 /*-------- booking - Marius --------*/
-
 
 .booking-popup {
   display: none;
@@ -792,7 +797,6 @@ nav a {
   display: none;
 }
 
-
 /* -------- Our Favourites - Vlada ------ */
 .main-heading {
   margin-top: 120px;
@@ -867,7 +871,7 @@ nav a {
 }
 
 .about-heading {
-  width: 70%;
+  width: 60%;
   font-weight: 900;
   margin-top: 80px;
   margin-bottom: 15px;
@@ -878,13 +882,13 @@ nav a {
   color: var(--text-color);
   font-size: 22pt;
   font-weight: 500;
-  width: 70%;
+  width: 60%;
   margin-bottom: 15px;
   margin-top: 0;
 }
 
 .about-description {
-  width: 70%;
+  width: 60%;
   font-size: 10pt;
   margin-bottom: 70px;
 }
@@ -1061,10 +1065,9 @@ nav a {
 
 /*-------- spin the wheel - Marius --------*/
 
-
 #ad-banner {
   width: 100%;
-  height: 220px;
+  height: 150px;
   background-color: var(--pink);
   display: flex;
   flex-direction: column;
@@ -1073,19 +1076,20 @@ nav a {
   align-items: center;
   z-index: 99999;
   background-image: url("../img/wheel-of-fortune.png");
-  background-size: 550px;
+  background-size: 500px;
   background-position-y: 50%;
-  background-position: 110%;
+  background-position: 120%;
   background-repeat: no-repeat;
   padding-top: 8em;
   z-index: 10;
 }
 
 .ad-banner-menu {
-  padding-top: 2em!important;
+  padding-top: 2em !important;
 }
 
 .ad-banner-title {
+  margin-top: 0;
   font-size: 14pt;
   font-family: montserrat, sans-serif;
   font-weight: 500;
@@ -1294,7 +1298,6 @@ footer {
   position: relative;
   z-index: 80;
 }
-
 
 @media only screen and (max-width: 1200px) {
   /*---------nav - Olga --------*/
@@ -1581,9 +1584,6 @@ footer {
   .ad-banner-subtitle {
     font-size: 1.6vw;
   }
-
-
-
 }
 
 @media only screen and (max-width: 900px) {
