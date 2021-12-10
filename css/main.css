@@ -22,6 +22,12 @@
 /* ---------- page styling - Olga ---------- */
 html,
 body {
+  width: 100%;
+
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -68,12 +74,12 @@ p {
 /*----------loader----------*/
 
 .loader {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100vw;
-  height:100vh;
-  z-index:1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
   background-color: var(--background);
   display: flex;
   justify-content: center;
@@ -445,9 +451,13 @@ nav a {
 
 /*---------photos - Olga --------*/
 
-.static-box, .static-box2, .static-box3,
-.static-box4, .static-box5, .static-box6,
- .static-box7 {
+.static-box,
+.static-box2,
+.static-box3,
+.static-box4,
+.static-box5,
+.static-box6,
+.static-box7 {
   position: relative;
   width: 100%;
   padding: 40px;
@@ -456,8 +466,12 @@ nav a {
   height: 13em;
 }
 
-.move-pic, .move-pic2, .move-pic3,
-.move-pic4, .move-pic5, .move-pic6, 
+.move-pic,
+.move-pic2,
+.move-pic3,
+.move-pic4,
+.move-pic5,
+.move-pic6,
 .move-pic7 {
   position: absolute;
   top: 0;
@@ -1082,7 +1096,7 @@ nav a {
 }
 
 .ad-banner-menu {
-  padding-top: 2em!important;
+  padding-top: 2em !important;
 }
 
 .ad-banner-title {
