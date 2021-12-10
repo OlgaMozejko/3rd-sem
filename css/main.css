@@ -22,6 +22,12 @@
 /* ---------- page styling - Olga ---------- */
 html,
 body {
+  width: 100%;
+
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   max-width: 100%;
   margin: 0 auto;
 }
