@@ -123,8 +123,8 @@ nav a {
   color: #ffffff;
 }
 
-.bootbtn:hover {
-  background-color: var(--pink);
+.s-hover:hover .bookbtn {
+  background-color: var(--pink) !important;
 }
 
 .bookbtn p {

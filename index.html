@@ -1,247 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Den Gule Cafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/nvm8xrk.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Den Gule Cafe</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="https://use.typekit.net/nvm8xrk.css" />
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-</head>
-
-<body onhashchange="pageChange()">
-
-  <div class="loader">
-    <div class="loading"></div>
-    <p>loading...</p>
-  </div>
-
-
-  <nav>
-    <div class="navbtn" id="navbtn">
-      <div id="line1" class="line1 line"></div>
-      <div id="line2" class="line2 line"></div>
+  <body onhashchange="pageChange()">
+    <div class="loader">
+      <div class="loading"></div>
+      <p>loading...</p>
     </div>
-    <a onclick="openBooking()">
-      <div class="bookbtn">
-        <p class="white-text">Book<br>table</p>
+
+    <nav>
+      <div class="navbtn" id="navbtn">
+        <div id="line1" class="line1 line"></div>
+        <div id="line2" class="line2 line"></div>
       </div>
-      <div class="bookbtn-bord"></div>
-    </a>
-
-
-    <img src="img/sunnaked-01.png" class="small-logo" alt="logo">
-
-
-    <div id="navi" class="overlay">
-      <div id="navlink" class="overlay-content">
-        <div class="overlay-content">
-          <a href="#home" onclick="topFunction()">home</a>
-          <a href="#cafe-menu" onclick="topFunction()">menu</a>
-          <a href="#" onclick="openBooking()">book a table</a>
-          <a href="#" onclick="openSpin()">spin the wheel</a>
-          <a href="#contact">contact</a>
+      <a onclick="openBooking()" class="s-hover">
+        <div class="bookbtn">
+          <p class="white-text">Book<br />table</p>
         </div>
-      </div>
-    </div>
+        <div class="bookbtn-bord"></div>
+      </a>
 
-  </nav>
+      <img src="img/sunnaked-01.png" class="small-logo" alt="logo" />
 
-  <!-- home page -->
-  <section id="home" class="page">
-    <div class="cover">
-      <div class="green-bg"></div>
-      <div class="sun">
-        <img src="img/border.png" alt="logo border" class="sun-border" />
-        <img src="img/sunnaked-01.png" alt="sun rays" class="sun-rays" />
-        <div class="face-box">
-          <img src="img/facefixed-01.png" alt="sun face" class="sun-face-all" />
-          <div class="wink-box">
-            <img src="img/winkclosed-01.png" alt="" class="sun-face-wink" />
-            <img src="img/winkopen-01.png" alt="" class="sun-face" />
+      <div id="navi" class="overlay">
+        <div id="navlink" class="overlay-content">
+          <div class="overlay-content">
+            <a href="#home" onclick="topFunction()">home</a>
+            <a href="#cafe-menu" onclick="topFunction()">menu</a>
+            <a href="#" onclick="openBooking()">book a table</a>
+            <a href="#" onclick="openSpin()">spin the wheel</a>
+            <a href="#contact">contact</a>
           </div>
         </div>
       </div>
+    </nav>
 
-      <div class="arrow"><img src="img/scroll-arrow.png" alt="arrow down"></div>
+    <!-- home page -->
+    <section id="home" class="page">
+      <div class="cover">
+        <div class="green-bg"></div>
+        <div class="sun">
+          <img src="img/border.png" alt="logo border" class="sun-border" />
+          <img src="img/sunnaked-01.png" alt="sun rays" class="sun-rays" />
+          <div class="face-box">
+            <img
+              src="img/facefixed-01.png"
+              alt="sun face"
+              class="sun-face-all"
+            />
+            <div class="wink-box">
+              <img src="img/winkclosed-01.png" alt="" class="sun-face-wink" />
+              <img src="img/winkopen-01.png" alt="" class="sun-face" />
+            </div>
+          </div>
+        </div>
 
-    </div>
-
-
-
-    <div class="flowers">
-      <img src="img/leaf5.png" alt="leaf" class="flowers-img flowers-img3 leaf1">
-      <img src="img/flowerone.png" alt="leaf" class="flowers-img leaf2">
-      <img src="img/leaf5.png" alt="leaf" class="flowers-img leaf3">
-      <img src="img/leaf4.png" alt="leaf" class="flowers-img leaf4">
-      <img src="img/flowerone.png" alt="leaf" class="flowers-img leaf5">
-      <img src="img/leaf5.png" alt="leaf" class="flowers-img leaf6">
-      <img src="img/leaf4.png" alt="leaf" class="flowers-img leaf7">
-      <img src="img/flowerone.png" alt="leaf" class="flowers-img leaf8">
-      <img src="img/leaf4.png" alt="leaf" class="flowers-img leaf9">
-      <img src="img/flowe4.png" alt="leaf" class="flowers-img2 leaf10">
-      <img src="img/flowe6.png" alt="leaf" class="flowers-img2 leaf11">
-    </div>
-
-    <div class="container">
-      <section id="booking-popup"></section>
-
-      <section id="spin-wheel">
-      </section>
-
-      <div id="ad-banner">
-        <p class="ad-banner-title">Spin the “wheel” for the chance to win a free coffee - every 24h</p>
-        <p class="ad-banner-subtitle" onclick="openSpin()">TRY MY LUCK</p>
+        <div class="arrow">
+          <img src="img/scroll-arrow.png" alt="arrow down" />
+        </div>
       </div>
 
-      <section id="our-favourites">
-        <h1 class="main-heading text-center">Our Favourites</h1>
-        <div id="menu-favourites" class="menu-favourites"></div>
-        <a href="#cafe-menu" onclick="topFunction()">
-          <div class="navigate-btn">
-            <p>our menu</p>
-            <div class="navigate-btn-bord"></div>
+      <div class="flowers">
+        <img
+          src="img/leaf5.png"
+          alt="leaf"
+          class="flowers-img flowers-img3 leaf1"
+        />
+        <img src="img/flowerone.png" alt="leaf" class="flowers-img leaf2" />
+        <img src="img/leaf5.png" alt="leaf" class="flowers-img leaf3" />
+        <img src="img/leaf4.png" alt="leaf" class="flowers-img leaf4" />
+        <img src="img/flowerone.png" alt="leaf" class="flowers-img leaf5" />
+        <img src="img/leaf5.png" alt="leaf" class="flowers-img leaf6" />
+        <img src="img/leaf4.png" alt="leaf" class="flowers-img leaf7" />
+        <img src="img/flowerone.png" alt="leaf" class="flowers-img leaf8" />
+        <img src="img/leaf4.png" alt="leaf" class="flowers-img leaf9" />
+        <img src="img/flowe4.png" alt="leaf" class="flowers-img2 leaf10" />
+        <img src="img/flowe6.png" alt="leaf" class="flowers-img2 leaf11" />
+      </div>
+
+      <div class="container">
+        <section id="booking-popup"></section>
+
+        <section id="spin-wheel"></section>
+
+        <div id="ad-banner">
+          <p class="ad-banner-title">
+            Spin the “wheel” for the chance to win a free coffee - every 24h
+          </p>
+          <p class="ad-banner-subtitle" onclick="openSpin()">TRY MY LUCK</p>
+        </div>
+
+        <section id="our-favourites">
+          <h1 class="main-heading text-center">Our Favourites</h1>
+          <div id="menu-favourites" class="menu-favourites"></div>
+          <a href="#cafe-menu" onclick="topFunction()">
+            <div class="navigate-btn">
+              <p>our menu</p>
+              <div class="navigate-btn-bord"></div>
+            </div>
+          </a>
+        </section>
+
+        <section id="about-us">
+          <div id="about-section" class="about-section"></div>
+        </section>
+
+        <section id="home-pictures">
+          <div class="static-box">
+            <div class="move-pic">
+              <img
+                src="img/cafe1.png"
+                alt="photo of the cafe"
+                class="cafe-pic"
+              />
+            </div>
           </div>
-        </a>
-      </section>
 
-      <section id="about-us">
-        <div id="about-section" class="about-section"></div>
-      </section>
+          <div class="static-box2">
+            <div class="move-pic2">
+              <img
+                src="img/cafe2.png"
+                alt="photo of the cafe"
+                class="cafe-pic2"
+              />
+            </div>
+          </div>
 
-      <section id="home-pictures">
+          <div class="static-box3">
+            <div class="move-pic3">
+              <img
+                src="img/cafe3.png"
+                alt="photo of the cafe"
+                class="cafe-pic"
+              />
+            </div>
+          </div>
 
-        <div class="static-box">
-          <div class="move-pic">
-            <img src="img/cafe1.png" alt="photo of the cafe" class="cafe-pic"></div>
-        </div>
+          <div class="static-box4">
+            <div class="move-pic4">
+              <img
+                src="img/cafe4.png"
+                alt="photo of the cafe"
+                class="cafe-pic2"
+              />
+            </div>
+          </div>
 
-        <div class="static-box2">
-          <div class="move-pic2">
-            <img src="img/cafe2.png" alt="photo of the cafe" class="cafe-pic2"></div>
-        </div>
+          <div class="static-box5">
+            <div class="move-pic5">
+              <img
+                src="img/cafe5.png"
+                alt="photo of the cafe"
+                class="cafe-pic"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
 
-        <div class="static-box3">
-          <div class="move-pic3">
-            <img src="img/cafe3.png" alt="photo of the cafe" class="cafe-pic"></div>
-        </div>
+    <!-- menu page -->
 
-        <div class="static-box4">
-          <div class="move-pic4">
-            <img src="img/cafe4.png" alt="photo of the cafe" class="cafe-pic2"></div>
-        </div>
-
-        <div class="static-box5">
-          <div class="move-pic5">
-            <img src="img/cafe5.png" alt="photo of the cafe" class="cafe-pic"></div>
-        </div>
-
-
-      </section>
-    </div>
-  </section>
-
-
-  <!-- menu page -->
-
-  <section id="cafe-menu" class="page">
-    <div id="ad-banner" class="ad-banner-menu">
-      <p class="ad-banner-title">Spin the “wheel” for the chance to win a free coffee - every 24h</p>
-      <p class="ad-banner-subtitle">TRY MY LUCK</p>
-    </div>
-    <h1 class="menu-head">
-      Den Gule Café<span class="menu-next">Menu</span>
-    </h1>
-    <div id="button-container"></div>
-    <!-- <button onclick="appendFoods(this.foods)">
+    <section id="cafe-menu" class="page">
+      <div id="ad-banner" class="ad-banner-menu">
+        <p class="ad-banner-title">
+          Spin the “wheel” for the chance to win a free coffee - every 24h
+        </p>
+        <p class="ad-banner-subtitle">TRY MY LUCK</p>
+      </div>
+      <h1 class="menu-head">
+        Den Gule Café<span class="menu-next">Menu</span>
+      </h1>
+      <div id="button-container"></div>
+      <!-- <button onclick="appendFoods(this.foods)">
         <img src="img/icons/guests.svg" />
       </button> -->
-    <div id="menu-list" class="menu-list"></div>
-    <h2 class="warmdrink-heading">Warm Drinks</h2>
-    <div id="warmdrink-list" class="menu-list"></div>
-    <h2 class="colddrink-heading">Cold Drinks</h2>
-    <div id="colddrink-list" class="menu-list"></div>
-    <h2 class="beer-heading">Beer</h2>
-    <div id="beer-list" class="menu-list"></div>
-    <h2 class="cocktails-heading">Wine & Cocktails</h2>
-    <div id="cocktails-list" class="menu-list"></div>
+      <div id="menu-list" class="menu-list"></div>
+      <h2 class="warmdrink-heading">Warm Drinks</h2>
+      <div id="warmdrink-list" class="menu-list"></div>
+      <h2 class="colddrink-heading">Cold Drinks</h2>
+      <div id="colddrink-list" class="menu-list"></div>
+      <h2 class="beer-heading">Beer</h2>
+      <div id="beer-list" class="menu-list"></div>
+      <h2 class="cocktails-heading">Wine & Cocktails</h2>
+      <div id="cocktails-list" class="menu-list"></div>
 
-    <div class="static-box6">
-      <div class="move-pic6">
-        <img src="img/CAFE6.png" alt="photo of the cafe" class="cafe-pic4"></div>
-    </div>
+      <div class="static-box6">
+        <div class="move-pic6">
+          <img src="img/CAFE6.png" alt="photo of the cafe" class="cafe-pic4" />
+        </div>
+      </div>
 
-    <div class="static-box7">
-      <div class="move-pic7">
-        <img src="img/CAFE7.png" alt="photo of the cafe" class="cafe-pic5"></div>
-    </div>
+      <div class="static-box7">
+        <div class="move-pic7">
+          <img src="img/CAFE7.png" alt="photo of the cafe" class="cafe-pic5" />
+        </div>
+      </div>
+    </section>
 
-  </section>
+    <footer id="contact">
+      <img src="img/logo-foot.png" class="bottom-logo" alt="logo" />
 
-  <footer id="contact">
+      <div class="foot-flex">
+        <div class="foot-innerflex">
+          <h1>Visit Us!</h1>
 
-    <img src="img/logo-foot.png" class="bottom-logo" alt="logo">
+          <p>
+            Den Gule Café, <br />
+            Jægergårdsgade 2A <br />
+            8000 Aarhus
+          </p>
+          <br />
+          <p>
+            Monday: closed <br />
+            Tuesday - Saturday: 10.00-18.00 <br />
+            Sunday: 10.00 - 15.00<br />
+          </p>
+          <br />
 
-    <div class="foot-flex">
-
-      <div class="foot-innerflex">
-
-        <h1>Visit Us!</h1>
-
-        <p>Den Gule Café, <br>
-          Jægergårdsgade 2A <br>
-          8000 Aarhus</p><br>
-        <p>Monday: closed <br>
-          Tuesday - Saturday: 10.00-18.00 <br>
-          Sunday: 10.00 - 15.00<br></p><br>
-
-        <div class="map-box" id="map">
+          <div class="map-box" id="map"></div>
         </div>
 
+        <div class="foot-innerflex">
+          <h1>Contact Us!</h1>
+          <br />
+
+          <p>
+            +45 9999999 <br />
+            dengulecafe@gmail.com
+          </p>
+          <br />
+
+          <div>
+            <a href="https://www.instagram.com/dengulecafe/"
+              ><img src="img/ig.png" class="some-icon" alt="instagram icon"
+            /></a>
+
+            <a href="https://m.facebook.com/Den-Gule-Cafe-104717631493947/"
+              ><img src="img/fb.png" class="some-icon" alt="instagram icon"
+            /></a>
+
+            <a
+              href="https://www.findsmiley.dk/Sider/KontrolRapport.aspx?Virk1881902"
+              ><img src="img/Smiley.png" class="some-icon" alt="instagram icon"
+            /></a>
+          </div>
+          <br /><br /><br />
+
+          <div class="flower-bottom"></div>
+        </div>
       </div>
-
-      <div class="foot-innerflex">
-
-        <h1>Contact Us!</h1> <br>
-
-        <p>+45 9999999 <br>
-          dengulecafe@gmail.com</p> <br>
-
-        <div>
-
-          <a href="https://www.instagram.com/dengulecafe/"><img src="img/ig.png" class="some-icon"
-              alt="instagram icon"></a>
-
-          <a href="https://m.facebook.com/Den-Gule-Cafe-104717631493947/"><img src="img/fb.png" class="some-icon"
-              alt="instagram icon"></a>
-
-          <a href="https://www.findsmiley.dk/Sider/KontrolRapport.aspx?Virk1881902"><img src="img/Smiley.png"
-              class="some-icon" alt="instagram icon"></a>
-
-        </div><br><br><br>
-
-        <div class="flower-bottom"></div>
-
+      <div class="bottom-flex">
+        <img src="img/icon-foot.png" alt="mini logo" class="mini-logo" />
+        <p class="bottom-text">©2021 DEN GULE CAFÉ<br />MADE WITH LOVE</p>
       </div>
+    </footer>
 
-    </div>
-    <div class="bottom-flex">
-      <img src="img/icon-foot.png" alt="mini logo" class="mini-logo">
-      <p class="bottom-text">©2021 DEN GULE CAFÉ<br>MADE WITH LOVE</p>
-    </div>
-
-  </footer>
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <!-- mapbox -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-  <script src="js/map-box.js"></script>
-  <!-- main js file -->
-  <script src="js/main.js" type="module"></script>
-</body>
-
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <script src="js/map-box.js"></script>
+    <!-- main js file -->
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>
