@@ -123,6 +123,10 @@ nav a {
   color: #ffffff;
 }
 
+.bootbtn:hover {
+  background-color: var(--pink);
+}
+
 .bookbtn p {
   font-family: kansasnew, serif;
   font-weight: 700;
