@@ -1426,7 +1426,7 @@ nav a {
   background-position: 120%;
   background-repeat: no-repeat;
   padding-top: 8em;
-  z-index: 10;
+  z-index: 20 !important;
 }
 
 .ad-banner-menu {
