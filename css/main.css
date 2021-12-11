@@ -153,9 +153,13 @@ nav a {
   z-index: 110;
   margin-top: 2em;
   margin-left: 2em;
+  visibility: hidden;
 }
 
 .small-logo-animate {
+  visibility: visible;
+  transition: all 0.5 ease;
+  transition-delay: 350ms;
   animation: rotating 16s infinite linear;
 }
 
@@ -375,6 +379,12 @@ nav a {
 
 .flowers-img-small2 {
   width: 3em !important;
+  right: 10% !important;
+}
+
+.flowers-img-small3 {
+  width: 3em !important;
+  left: 4% !important;
 }
 
 .flowers {
@@ -395,7 +405,7 @@ nav a {
 
 .leaf2 {
   transform: rotate(105deg);
-  top: -38%;
+  top: -20%;
   left: 25%;
 }
 
@@ -1084,7 +1094,6 @@ nav a {
   justify-content: center;
   text-align: center;
   align-items: center;
-  z-index: 99999;
   background-image: url("../img/wheel-of-fortune.png");
   background-size: 500px;
   background-position-y: 50%;
@@ -1705,14 +1714,17 @@ footer {
     width: 4.5em !important;
   }
 
-  .flowers-img-small2 {
+  .flowers-img-small2,
+  .flowers-img-small3 {
     width: 1.5em !important;
   }
 
   /*----photos-Olga-----*/
 
   .cafe-pic,
-  .cafe-pic2 {
+  .cafe-pic2,
+  .cafe-pic4,
+  .cafe-pic5 {
     width: 20em;
     margin-left: 0%;
   }
@@ -1725,13 +1737,26 @@ footer {
     margin-left: 20em;
   }
 
+  .cafe-pic4 {
+    margin-left: -20em;
+  }
+
+  .cafe-pic5 {
+    margin-left: 45em;
+  }
+
+
   .static-box,
   .static-box2,
   .static-box3,
   .static-box4,
-  .static-box5 {
+  .static-box5,
+  .static-box6,
+  .static-box7 {
     height: 3em;
   }
+
+
 
   /*---- footer Olga ------*/
 

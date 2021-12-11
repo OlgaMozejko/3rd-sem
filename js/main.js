@@ -6,6 +6,10 @@ window.addEventListener("load", function () {
   document.querySelector("body").classList.add("loaded");
 });
 
+
+
+// booking + spin the wheel
+
 import SpaService from "./spa-service.js";
 import MenuService from "./menu-service.js";
 import BookingService from "./booking.js";
@@ -102,12 +106,11 @@ window.close = function () {
     "rotate(0deg) translate(0em)";
 };
 
-// scroll
+// scroll functions
 
-// When the user clicks on the button, scroll to the top of the document
 window.topFunction = function () {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
 };
 
 var scrollPosition = window.scrollY;
@@ -124,6 +127,7 @@ var leaf8 = document.getElementsByClassName("leaf8")[0];
 var leaf9 = document.getElementsByClassName("leaf9")[0];
 var flower1 = document.getElementsByClassName("leaf10")[0];
 var flower2 = document.getElementsByClassName("leaf11")[0];
+var lines = document.getElementsByClassName("navbtn")[0];
 
 window.addEventListener("scroll", function () {
   scrollPosition = window.scrollY;
@@ -139,7 +143,7 @@ window.addEventListener("scroll", function () {
     leaf7.classList.add("flowers-img-small");
     leaf8.classList.add("flowers-img-small");
     leaf9.classList.add("flowers-img-small");
-    flower1.classList.add("flowers-img-small2");
+    flower1.classList.add("flowers-img-small3");
     flower2.classList.add("flowers-img-small2");
     logo.classList.add("small-logo-animate");
   } else {
@@ -153,7 +157,7 @@ window.addEventListener("scroll", function () {
     leaf7.classList.remove("flowers-img-small");
     leaf8.classList.remove("flowers-img-small");
     leaf9.classList.remove("flowers-img-small");
-    flower1.classList.remove("flowers-img-small2");
+    flower1.classList.remove("flowers-img-small3");
     flower2.classList.remove("flowers-img-small2");
     logo.classList.remove("small-logo-animate");
   }
