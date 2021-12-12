@@ -127,7 +127,7 @@ var leaf8 = document.getElementsByClassName("leaf8")[0];
 var leaf9 = document.getElementsByClassName("leaf9")[0];
 var flower1 = document.getElementsByClassName("leaf10")[0];
 var flower2 = document.getElementsByClassName("leaf11")[0];
-var lines = document.getElementsByClassName("navbtn")[0];
+
 
 window.addEventListener("scroll", function () {
   scrollPosition = window.scrollY;

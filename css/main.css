@@ -167,6 +167,19 @@ nav a {
   visibility: hidden;
 }
 
+.small-logo2 {
+  width: 3em;
+  position: fixed;
+  z-index: 110;
+  margin-top: 2em;
+  margin-left: 2em;
+  animation: rotating 16s infinite linear;
+  -webkit-animation: rotating 16s infinite linear;
+  -moz-animation: rotating 16s infinite linear;
+  -ms-animation: rotating 16s infinite linear;
+  -o-animation: rotating 16s infinite linear;
+}
+
 .small-logo-animate {
   visibility: visible;
   transition: all 0.5 ease;
@@ -2025,6 +2038,12 @@ footer {
   }
 
   .small-logo {
+    width: 3em;
+    margin-top: 1.3em;
+    margin-left: 1.2em;
+  }
+
+  .small-logo2 {
     width: 3em;
     margin-top: 1.3em;
     margin-left: 1.2em;
