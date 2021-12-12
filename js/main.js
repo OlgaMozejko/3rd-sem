@@ -171,8 +171,8 @@ $(window).on("load resize scroll", function () {
   $(".static-box").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
-    var leftPosition = windowTop - elementTop;
-    $(this).find(".move-pic").css({ right: leftPosition });
+    var rightPosition = windowTop - elementTop;
+    $(this).find(".move-pic").css({ right: rightPosition });
   });
 });
 
@@ -189,8 +189,8 @@ $(window).on("load resize scroll", function () {
   $(".static-box3").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
-    var leftPosition = windowTop - elementTop;
-    $(this).find(".move-pic3").css({ right: leftPosition });
+    var rightPosition = windowTop - elementTop;
+    $(this).find(".move-pic3").css({ right: rightPosition });
   });
 });
 
@@ -207,8 +207,8 @@ $(window).on("load resize scroll", function () {
   $(".static-box5").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
-    var leftPosition = windowTop - elementTop;
-    $(this).find(".move-pic5").css({ right: leftPosition });
+    var rightPosition = windowTop - elementTop;
+    $(this).find(".move-pic5").css({ right: rightPosition });
   });
 });
 
@@ -216,8 +216,8 @@ $(window).on("load resize scroll", function () {
   $(".static-box6").each(function () {
     var windowTop = $(window).scrollTop();
     var elementTop = $(this).offset().top;
-    var leftPosition = windowTop - elementTop;
-    $(this).find(".move-pic6").css({ right: leftPosition });
+    var rightPosition = windowTop - elementTop;
+    $(this).find(".move-pic6").css({ right: rightPosition });
   });
 });
 
