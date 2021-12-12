@@ -159,6 +159,7 @@ nav a {
 }
 
 .small-logo {
+  top: 0;
   width: 3em;
   position: fixed;
   z-index: 110;
@@ -168,6 +169,7 @@ nav a {
 }
 
 .small-logo2 {
+  top: 0;
   width: 3em;
   position: fixed;
   z-index: 110;
@@ -2038,14 +2040,12 @@ footer {
   }
 
   .small-logo {
-    top: 0;
     width: 3em;
     margin-top: 1.3em;
     margin-left: 1.2em;
   }
 
   .small-logo2 {
-    top: 0;
     width: 3em;
     margin-top: 1.3em;
     margin-left: 1.2em;
