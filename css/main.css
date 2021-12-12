@@ -291,6 +291,7 @@ nav a {
   margin: 0 auto;
   bottom: 0;
   margin-bottom: 1em;
+  z-index: 10;
 }
 
 .sun {
@@ -1428,7 +1429,7 @@ nav a {
   background-position: 120%;
   background-repeat: no-repeat;
   padding-top: 8em;
-  z-index: 20 !important;
+  
 }
 
 .ad-banner-menu {
@@ -1450,8 +1451,11 @@ nav a {
   text-decoration: underline;
   color: #c27060;
   cursor: pointer;
-  z-index: 30;
+  position: relative;
+  z-index: 30 !important;
 }
+
+
 
 .spin-popup {
   display: none;
