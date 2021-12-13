@@ -314,7 +314,6 @@ nav a {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  z-index: 50;
 }
 
 .sun img {
@@ -650,7 +649,7 @@ nav a {
 
 .flowers-img {
   position: absolute;
-  width: 18em;
+  width: 14em;
   transition: 1s ease;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
@@ -659,12 +658,12 @@ nav a {
 }
 
 .flowers-img-small {
-  width: 10em !important;
+  width: 9em !important;
 }
 
 .flowers-img2 {
   position: absolute;
-  width: 6em;
+  width: 5em;
   transition: 1s ease;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
@@ -699,7 +698,7 @@ nav a {
     -ms-transform: rotate(130deg);
     -o-transform: rotate(130deg);
   left: 0%;
-  top: -12%;
+  top: -10%;
 }
 
 .leaf2 {
@@ -708,7 +707,7 @@ nav a {
     -moz-transform: rotate(105deg);
     -ms-transform: rotate(105deg);
     -o-transform: rotate(105deg);
-  top: -30%;
+  top: -20%;
   left: 25%;
 }
 
@@ -718,7 +717,7 @@ nav a {
     -moz-transform: rotate(-135deg);
     -ms-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
-  top: -24%;
+  top: -20%;
   left: 65%;
 }
 
@@ -738,7 +737,7 @@ nav a {
     -moz-transform: rotate(-60deg);
     -ms-transform: rotate(-60deg);
     -o-transform: rotate(-60deg);
-  right: -3%;
+  right: -2%;
   bottom: 15%;
 }
 
@@ -748,7 +747,7 @@ nav a {
     -moz-transform: rotate(-20deg);
     -ms-transform: rotate(-20deg);
     -o-transform: rotate(-20deg);
-  bottom: -18%;
+  bottom: -15%;
   right: 12%;
 }
 
@@ -758,7 +757,7 @@ nav a {
     -moz-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
     -o-transform: rotate(30deg);
-  bottom: -20%;
+  bottom: -10%;
   left: 15%;
 }
 
@@ -768,8 +767,8 @@ nav a {
     -moz-transform: rotate(20deg);
     -ms-transform: rotate(20deg);
     -o-transform: rotate(20deg);
-  left: -7%;
-  bottom: -14%;
+  left: -5%;
+  bottom: -10%;
 }
 
 .leaf9 {
@@ -778,7 +777,7 @@ nav a {
     -moz-transform: rotate(130deg);
     -ms-transform: rotate(130deg);
     -o-transform: rotate(130deg);
-  left: -5%;
+  left: -3%;
   top: 25%;
 }
 
