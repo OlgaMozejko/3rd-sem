@@ -314,6 +314,7 @@ nav a {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  z-index: 50;
 }
 
 .sun img {
@@ -707,7 +708,7 @@ nav a {
     -moz-transform: rotate(105deg);
     -ms-transform: rotate(105deg);
     -o-transform: rotate(105deg);
-  top: -20%;
+  top: -30%;
   left: 25%;
 }
 
