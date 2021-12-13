@@ -28,7 +28,6 @@ export default class MenuService {
     // ========== READ ==========
     // watch the database ref for changes
     onSnapshot(this.foodsRef, (snapshot) => {
-      // mapping snapshot data from firebase in to user objects
       this.foods = snapshot.docs.map((doc) => {
         const foods = doc.data();
         foods.id = doc.id;
@@ -45,7 +44,6 @@ export default class MenuService {
     // ========== READ ==========
     // watch the database ref for changes
     onSnapshot(this.beersRef, (snapshot) => {
-      // mapping snapshot data from firebase in to user objects
       this.beers = snapshot.docs.map((doc) => {
         const beers = doc.data();
         beers.id = doc.id;
@@ -61,7 +59,6 @@ export default class MenuService {
     // ========== READ ==========
     // watch the database ref for changes
     onSnapshot(this.warmDrinksRef, (snapshot) => {
-      // mapping snapshot data from firebase in to user objects
       this.warmDrinks = snapshot.docs.map((doc) => {
         const warmDrinks = doc.data();
         warmDrinks.id = doc.id;
@@ -77,7 +74,6 @@ export default class MenuService {
     // ========== READ ==========
     // watch the database ref for changes
     onSnapshot(this.coldDrinksRef, (snapshot) => {
-      // mapping snapshot data from firebase in to user objects
       this.coldDrinks = snapshot.docs.map((doc) => {
         const coldDrinks = doc.data();
         coldDrinks.id = doc.id;
@@ -93,7 +89,6 @@ export default class MenuService {
     // ========== READ ==========
     // watch the database ref for changes
     onSnapshot(this.cocktailsRef, (snapshot) => {
-      // mapping snapshot data from firebase in to user objects
       this.cocktails = snapshot.docs.map((doc) => {
         const cocktails = doc.data();
         cocktails.id = doc.id;
