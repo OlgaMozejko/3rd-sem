@@ -2517,7 +2517,7 @@ footer {
   }
 
   /* wheel - Marius */
-  #ad-banner {
+  .ad-banner {
     margin-top: 0;
     height: 180px;
     background-position: -70%;
