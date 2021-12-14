@@ -184,11 +184,11 @@ nav a {
 
 .small-logo-animate {
   visibility: visible;
-  transition: all 0.5 ease;
-    -webkit-transition: all 0.5 ease;
-    -moz-transition: all 0.5 ease;
-    -ms-transition: all 0.5 ease;
-    -o-transition: all 0.5 ease;
+  transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
   transition-delay: 350ms;
     -webkit-transition-delay: 350ms;
     -moz-transition-delay: 350ms;
@@ -2349,7 +2349,7 @@ footer {
     width: 20px;
     height: 20px;
     border-radius: 6px;
-    border: 0;
+    border: none;
     font-size: 10;
   }
 
@@ -2521,6 +2521,19 @@ footer {
     margin-top: 0;
     height: 180px;
     background-position: -70%;
+    display: none;
+  }
+
+  .ad-banner2 {
+    margin-top: 0;
+    height: 180px;
+    background-position: -70%;
+    display: inline-block;
+  }
+
+
+  .ad-banner-visible {
+    display: inline-block !important;
   }
 
   .ad-banner-title {
@@ -2559,7 +2572,7 @@ footer {
   }
 
   .checkbox-text {
-    align-items: left !important;
+    text-align: left;
     font-size: 10px;
   }
 
