@@ -1444,7 +1444,7 @@ nav a {
   background-position: 120%;
   background-repeat: no-repeat;
   padding-top: 8em; 
-  display: none;
+  display: inline-block; 
 }
 
 .ad-banner2 {
@@ -1467,9 +1467,6 @@ nav a {
   display: inline-block; 
 }
 
-.ad-banner-visible {
-  display: inline-block !important;
-}
 
 .ad-banner-menu {
   padding-top: 2em !important;

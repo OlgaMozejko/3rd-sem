@@ -127,7 +127,6 @@ var leaf8 = document.getElementsByClassName("leaf8")[0];
 var leaf9 = document.getElementsByClassName("leaf9")[0];
 var flower1 = document.getElementsByClassName("leaf10")[0];
 var flower2 = document.getElementsByClassName("leaf11")[0];
-var banner = document.getElementsByClassName("ad-banner")[0];
 
 window.addEventListener("scroll", function () {
   scrollPosition = window.scrollY;
@@ -146,7 +145,6 @@ window.addEventListener("scroll", function () {
     flower1.classList.add("flowers-img-small3");
     flower2.classList.add("flowers-img-small2");
     logo.classList.add("small-logo-animate");
-    banner.classList.remove("ad-banner-visible");
   } else {
     cover.classList.remove("cover-close");
     leaf1.classList.remove("flowers-img-small");
@@ -161,7 +159,6 @@ window.addEventListener("scroll", function () {
     flower1.classList.remove("flowers-img-small3");
     flower2.classList.remove("flowers-img-small2");
     logo.classList.remove("small-logo-animate");
-    banner.classList.add("ad-banner-visible");
   }
 });
 
